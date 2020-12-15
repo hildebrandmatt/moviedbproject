@@ -20,6 +20,13 @@ const Header = () => {
         }
     }
     
+    useEffect(() => {
+          let mediaQuery = window.matchMedia('(min-width: 600px)');
+          mediaQuery.addListener(isDesktop);
+          // this is the cleanup function to remove the listener
+          return () => mediaQuery.removeListener(isDesktop);
+    }, []);
+
     return (
         <header>
             <h1>Hello I'm a Header</h1>
