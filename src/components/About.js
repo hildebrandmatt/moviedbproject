@@ -1,9 +1,12 @@
 const About = () => {
     return (
         <main>
-            <section>
-                <h2>ABOUT</h2>
-            </section>
+            <div class="content-box">
+                <h1>About</h1>
+                <hr />
+                <p>some placeholder about text here, this is where the description about the app goes</p>
+            </div>
+            
         </main>
     )
 }

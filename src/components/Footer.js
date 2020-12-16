@@ -2,7 +2,7 @@ import { makeYear } from '../utilities/dateMaker';
 
 const Footer = () => (
     <footer>
-        <p>&copy; {makeYear()} Matt Hildebrand and Skye Yang</p>
+        <p>&copy; {makeYear()} matt hildebrand + skye yang | for educational purposes only</p>
     </footer>
 );
 

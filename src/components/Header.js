@@ -29,8 +29,8 @@ const Header = () => {
 
     return (
         <header>
-            <h1>Hello I'm a Header</h1>
-            <Nav hideNav={hideNav} />
+            <h1>Placehold DB name</h1>
+                <Nav hideNav={hideNav} />                
         </header>
     )
 }
