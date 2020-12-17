@@ -11,6 +11,9 @@ body {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    box-shadow: 5px 5px 10px #000000;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .poster{
@@ -24,14 +27,48 @@ body {
     height: 400px;
     z-index: 2;
     position: relative;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 13%, rgba(0,255,255,0) 30%, rgba(0,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(14,12,13,1) 0%, rgba(14,12,13,1) 16%, rgba(14,255,255,0) 32%, rgba(14,255,255,0) 100%);
+}
+
+.hover-info{
+    width: 240px;
+    height: 400px;
+    padding: 20px;
+    background-color: rgba(14,12,13,0.85);
+    position: relative;
+    display: none;
+}
+
+.movie-info-card:hover .hover-info{
+    display:block;
+}
+
+.poster-fave-button{
+    position: absolute;
+    right: 20px;    
+}
+
+.hover-info p{
+    font-size: 13px;
+    width: 180px;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.more-info-btn{
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
 }
 
 .quick-intro{
     width: 240px;
-    height: 40px;
+    height: 70px;
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
+    padding: 0px 20px 12px 20px;
 }
 
 .quick-intro h1{
