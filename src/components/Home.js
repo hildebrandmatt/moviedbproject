@@ -9,7 +9,7 @@ const Home = () => {
                         <h1 class="title-red">All&nbsp;</h1> <h1 class="title-white">Movies</h1>
                     </div>
                     <form>
-                        <label for="selected-category">Display by:</label>
+                        <label for="selected-category">Display by: </label>
                         <select name="selected-category" id="selected-category" class="selected-category">
                             <option value="popular">Popular</option>
                             <option value="now-playing">Now Playing</option>

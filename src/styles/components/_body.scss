@@ -30,11 +30,14 @@ body {
     position: absolute;
 }
 
+//poster-title probably needs styles because the text underneath it
+//goes poof when the title is long
+
 .description{
     width: 240px;
     height: 400px;
     z-index: 2;
-    position: relative;
+    position: relative; 
     background: linear-gradient(0deg, rgba(14,12,13,1) 0%, rgba(14,12,13,1) 16%, rgba(14,255,255,0) 32%, rgba(14,255,255,0) 100%);
 }
 
@@ -45,6 +48,7 @@ body {
     background-color: rgba(14,12,13,0.85);
     position: relative;
     display: none;
+
 }
 
 .movie-info-card:hover .hover-info{
@@ -64,11 +68,23 @@ body {
 }
 
 .more-info-btn{
+    background-color: transparent;
+    color: $color-font-red;
+    outline: transparent;
+    border: solid 1px $color-font-red;
+    border-radius: 10px;
+    padding: 5px 7px;
     position: absolute;
     bottom: 110px;
     left: 50%;
     -ms-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
+    transition: 0.3s;
+}
+
+.more-info-btn:hover{
+    color: $color-font-white;
+    cursor: pointer;
 }
 
 .quick-intro{
@@ -95,5 +111,25 @@ body {
     font-size: 13px;
     color: $color-font-red;
     margin: 0px;
+
+}
+
+label{
+    color: $color-font-white;
+}
+
+//arbitrary min width for now, just for testing
+@media (min-width: 670px){
+    //elements
+    form{
+        margin-top: 35px;
+    }
+
+    //classes
+    .home-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+
 
 }
