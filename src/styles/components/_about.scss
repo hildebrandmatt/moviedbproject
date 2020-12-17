@@ -1,7 +1,16 @@
+.content-box h1{
+    color: $color-font-white;
+    margin: 0;
+}
+
 .content-box{
     margin: 15px;
     padding: 15px;
     background-color: $color-box;
     border-radius: 15px;
     box-shadow: 5px 10px 8px black;
+}
+
+hr{
+    border: solid 1px $color-font-red;
 }
