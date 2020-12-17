@@ -3,10 +3,14 @@ import poster from '../images/dummyImages/tenet.jpg';
 const Favourites = () => {
     return (
         <main>
-            <h1>Favourite Movies</h1>
+            <div className="page-title">
+                <h1 class="title-red">Favourite&nbsp;</h1> <h1 class="title-white">Movies</h1>
+            </div>
             <div class="no-favourites">
                 <div class="content-box">
-                    <p>some placeholder about text here, this is where the user is instructed on how to add favourite movies</p>
+                    <p>Oh no! Looks like you have no favourites. Add movies to your
+                        favourites by clicking the [heart] on the movie cards.
+                    </p>
                 </div>
             </div>
 

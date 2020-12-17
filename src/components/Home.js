@@ -5,7 +5,9 @@ const Home = () => {
         <main>
             <div class="home-section">
                 <div class="home-bar">
-                    <h1>All Movies</h1>
+                    <div className="page-title">
+                        <h1 class="title-red">All&nbsp;</h1> <h1 class="title-white">Movies</h1>
+                    </div>
                     <form>
                         <label for="selected-category">Display by:</label>
                         <select name="selected-category" id="selected-category" class="selected-category">

@@ -1,3 +1,11 @@
+.page-title{
+    display: flex;
+}
+
+.title-white{
+    color: $color-font-white;
+}
+
 body {
     background-color: $color-background;
     color: $color-font-red;
