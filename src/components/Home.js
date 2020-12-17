@@ -1,3 +1,5 @@
+import poster from '../images/dummyImages/tenet.jpg';
+
 const Home = () => {
     return (
         <main>
@@ -18,20 +20,20 @@ const Home = () => {
 
                     <div class="movie-info-card">
                         <div class="poster">
-                            <img src="#0" />
+                            <img src={poster} />
                         </div>
                         <div class="description">
                             <button class="poster-fave-button">heart</button>
+                            <div class="hover-info">
+                                <p>placeholder movie info here, to be seen on hover</p>
+                                <button class="more-info-btn">More info</button>
+                            </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
                                     <h1>placeholder movie title</h1>
                                     <h3>placeholder release date</h3>
                                     <p>placeholder rating stars</p>
                                 </div>
-                            </div>
-                            <div class="hover-info">
-                                <p>placeholder movie info here, to be seen on hover</p>
-                                <button class="more-info-btn">More info</button>
                             </div>
                         </div>
                     </div>

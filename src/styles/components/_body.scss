@@ -2,3 +2,53 @@ body {
     background-color: $color-background;
     color: $color-font-red;
 }
+
+.movie-info-card{
+    background-color: $color-box;
+    width: 240px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.poster{
+    width: 240px;
+    height: 360px;
+    position: absolute;
+}
+
+.description{
+    width: 240px;
+    height: 400px;
+    z-index: 2;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 13%, rgba(0,255,255,0) 30%, rgba(0,255,255,0) 100%);
+}
+
+.quick-intro{
+    width: 240px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.quick-intro h1{
+    font-size: 18px;
+    color: $color-font-white;
+    margin: 0px;
+}
+
+.quick-intro h3, p{
+    font-size: 13px;
+    color: $color-font-white;
+    margin: 0px;
+}
+
+.quick-intro p{
+    font-size: 13px;
+    color: $color-font-red;
+    margin: 0px;
+
+}
