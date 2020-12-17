@@ -1,8 +1,10 @@
+import poster from '../images/dummyImages/tenet.jpg';
+
 const SingleMovie = () => {
     return (
         <main>
             <div class="about-movie-box">
-                <img src="#0" />
+                <img src={poster} />
                 <h1>movie title</h1>
                 <div class="about-movie-quick-info">
                     <div class="release-date">
