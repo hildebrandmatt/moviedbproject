@@ -1,4 +1,4 @@
-const Movie = () => {
+const SingleMovie = () => {
     return (
         <main>
             <div class="about-movie-box">
@@ -24,4 +24,4 @@ const Movie = () => {
     )
 }
 
-export default Movie;
+export default SingleMovie;

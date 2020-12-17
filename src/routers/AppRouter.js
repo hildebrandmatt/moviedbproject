@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Home from '../components/Home';
 import About from '../components/About';
-import Movie from '../components/Movie';
+import SingleMovie from '../components/SingleMovie';
 import Favourites from '../components/Favourites';
 import PageNotFound from '../components/PageNotFound';
 
@@ -16,7 +16,7 @@ const AppRouter = () => (
 			<Switch>
 				<Route path={'/'} exact><Home /></Route>
 				<Route path={'/about'}><About /></Route>
-				<Route path={'/movie'}><Movie /></Route>
+				<Route path={'/single-movie/:id'}><SingleMovie /></Route>
 				<Route path={'/favourites'}><Favourites /></Route>
 				<Route path={'/*'}><PageNotFound /></Route>
 			</Switch>
