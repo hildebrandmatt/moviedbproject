@@ -5,7 +5,7 @@ const Home = () => {
         <main>
             <div class="home-section">
                 <div class="home-bar">
-                    <div className="page-title">
+                    <div className="page-title home-title">
                         <h1 class="title-red">All&nbsp;</h1> <h1 class="title-white">Movies</h1>
                     </div>
                     <form>
