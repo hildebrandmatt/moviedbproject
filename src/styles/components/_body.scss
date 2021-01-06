@@ -132,6 +132,12 @@ label{
 
 //arbitrary min width for now, just for testing
 @media (min-width: 460px){
+    .movie-gallery{
+        margin: 0px 60px 0px 60px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 }
 
 @media (min-width: 670px){
@@ -157,4 +163,6 @@ label{
         margin-left: 80px;
         justify-content: initial;
     }
+
+
 }
