@@ -5,8 +5,7 @@
 .page-title{
     margin: 0px 150px;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: center;  
 }
 
 .title-white{
@@ -133,9 +132,9 @@ label{
 
 //arbitrary min width for now, just for testing
 @media (min-width: 460px){
-    .page-title{
+    /*.page-title{
         margin: 0px 250px;
-    }
+    }*/
 }
 
 @media (min-width: 670px){
