@@ -42,6 +42,13 @@ hr{
     }
 }
 
+@media (min-width: 670px){
+    .content-box h1{
+        text-align: left;
+        padding-left: 20px
+    }
+}
+
 @media (min-width: 1020px){
     //adjust these later
     .content-box{
