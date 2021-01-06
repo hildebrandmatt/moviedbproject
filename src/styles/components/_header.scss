@@ -1,31 +1,38 @@
 //self-reminder to remember to code mobile-first
 
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-box;
+    padding: 12px;
+}
+
+ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style-type: none;
+    padding: 14px;
+}
+
+header img{
+    max-height: 64px;
+}
+
+.logo-image{
+    max-height: 64px;
+}
+
+
 //these are all gonna be media query, since mobile uses icons
 //still needa work out how to change the font colour while on page
+
 @media (min-width: 670px) {
-    header{
-        display: flex;
-        justify-content: space-between;
-        background-color: $color-box;
-    }
-
-    ul{
-        display: flex;
-    }
-
-    li{
-        list-style-type: none;
-        padding: 10px
-    }
-
-    a{
-        text-decoration: none;
-        color: $color-font-white;
-        transition: 0.3s;
-    }
 
     a:hover{
         color: $color-font-red;
     }
-
 }

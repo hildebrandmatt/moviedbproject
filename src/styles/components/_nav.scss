@@ -1,2 +1,34 @@
 //assuming we'll be using media queries to make the change between
 //socmed icons and text ? 
+
+nav p{
+    display: none;
+}
+
+nav img{
+    height: 36px;
+    width: 36px;
+}
+
+nav img:hover{
+    filter: brightness(0) invert(1);
+}
+
+
+@media (min-width: 670px) {
+
+    nav p{
+        display: block;
+        font-size: 24pt;
+        font-style: none;
+    }
+
+    nav p:hover{
+        color: $color-font-red;
+    }
+
+    nav img{
+        display: none;
+    }
+
+}

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Nav from './Nav';
 import { Link } from 'react-router-dom';
+import logo from '../images/logoRed.png';
+import Search from './Search';
 
 const Header = () => {
 
@@ -29,8 +31,9 @@ const Header = () => {
 
     return (
         <header>
-            <h1>Placehold DB name</h1>
-                <Nav hideNav={hideNav} />                
+            <img src={ logo } class="logo-image" />
+            <Nav hideNav={hideNav} class="logo-image" />
+            <Search />
         </header>
     )
 }
