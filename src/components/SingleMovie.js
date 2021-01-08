@@ -3,9 +3,13 @@ import poster from '../images/dummyImages/tenet.jpg';
 const SingleMovie = () => {
     return (
         <main>
+            <div className="about-movie-poster-and-title">
+                <div className="about-movie-poster-box">
+                    <img src={poster} class="about-movie-poster"/>
+                </div>
+                <h3 class="about-movie-title">movie title</h3>
+            </div>
             <div class="about-movie-box">
-                <img src={poster} class="about-movie-poster"/>
-                <h1 class="about-movie-title">movie title</h1>
                 <div class="about-movie-quick-info">
                     <div class="release-date">
                         <p><b>Released</b></p>
@@ -13,12 +17,14 @@ const SingleMovie = () => {
                     </div>
                     <div class="about-movie-rating">
                         <p><b>Rating</b></p>
-                        <p>placeholder rating stars here</p>
+                        <p>**********</p>
                     </div>
                 </div>
                 <hr />
-                <p><b>synopsis</b></p>
-                <p>movie synopsis/description goes here.</p>
+                <div className="about-synopsis">
+                    <p class="synopsis-title">Synopsis</p>
+                    <p>movie synopsis/description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
                 <button class="about-fave-button">nya</button>
             </div>
             
