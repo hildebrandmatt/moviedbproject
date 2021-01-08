@@ -243,16 +243,21 @@ classes
 styling for single pages
 ------------------------
 */
+    .single-movie-content{
+        position: fixed;
+        margin: auto;
+    }
+
     .about-movie-poster{
         width: 325px;
         margin-top: 85px;
-        left: -150px;
+        left: 70px;
     }
 
     .about-movie-title{
         background: none;
         top: -475px;
-        left: 75px;
+        left: 300px;
         padding: 0px;
         font-size: 2em;
     }
