@@ -7,7 +7,7 @@ const SingleMovie = () => {
                 <div className="about-movie-poster-box">
                     <img src={poster} class="about-movie-poster"/>
                 </div>
-                <h3 class="about-movie-title">movie title</h3>
+                <h3 class="about-movie-title">Tenet</h3>
             </div>
             <div class="about-movie-box">
                 <div class="about-movie-quick-info">

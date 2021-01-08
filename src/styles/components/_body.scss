@@ -145,8 +145,8 @@ styling for single pages
     position: relative;
     max-width: 80%;
     height: auto;
-    border-radius: 10px;
     margin-top: 30px;
+    border-radius: 10px;
     box-shadow: 5px 5px 10px #000000;
 }
 
@@ -235,5 +235,34 @@ classes
         justify-content: initial;
     }
 
+}
 
+@media (min-width: 900px){
+/*
+------------------------
+styling for single pages
+------------------------
+*/
+    .about-movie-poster{
+        width: 325px;
+        margin-top: 85px;
+        left: -150px;
+    }
+
+    .about-movie-title{
+        background: none;
+        top: -475px;
+        left: 75px;
+        padding: 0px;
+        font-size: 2em;
+    }
+
+    .about-movie-box{
+        margin: 15px 20px 20px 20px;
+        border-radius: 15px;
+        top: -475px;
+        left: 400px;
+        width: 450px;
+        padding: 45px 25px 25px 85px;
+    }
 }
