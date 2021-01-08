@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { TMDB_API_KEY, TMDB_BASE_URL } from '../globals/variables';
 
 const NowPlayingMovies = () => {
