@@ -4,8 +4,8 @@ const SingleMovie = () => {
     return (
         <main>
             <div class="about-movie-box">
-                <img src={poster} />
-                <h1>movie title</h1>
+                <img src={poster} class="about-movie-poster"/>
+                <h1 class="about-movie-title">movie title</h1>
                 <div class="about-movie-quick-info">
                     <div class="release-date">
                         <p><b>Released</b></p>
@@ -19,7 +19,7 @@ const SingleMovie = () => {
                 <hr />
                 <p><b>synopsis</b></p>
                 <p>movie synopsis/description goes here.</p>
-                <button class="fave-button">nya</button>
+                <button class="about-fave-button">nya</button>
             </div>
             
         </main>
