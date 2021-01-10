@@ -23,8 +23,9 @@ export const processMovie = (mdAPI, arrayItem) => {
     return processedMD
 }
 
-const formatDate = ( date ) => {
-    
+/*const formatDate = ( date ) => {
+
+    formattedDate = date
 
     return formattedDate
-}
+}*/
