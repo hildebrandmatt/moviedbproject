@@ -5,7 +5,7 @@ const TestPage = () => {
     return (
         <main>
             <div class="content-box">
-                <h1>About</h1>
+                <h1>TESTING</h1>
                 <hr />
                 <MovieDatabase />
                 <p>
