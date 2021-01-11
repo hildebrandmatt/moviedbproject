@@ -30,6 +30,10 @@ input{
     border-bottom: solid 1px $color-font-red;
 }
 
+::placeholder{
+    font-style: italic;
+}
+
 @media (min-width: 670px) {
 
     .logo-image{
