@@ -1,10 +1,10 @@
 
 
-export const processMovieArray = (mdAPI) => {
+export const processMovieArray = (mdAPI, length) => {
 
     const processedMDArray = {}
     var i;
-    for ( i=0; i < mdAPI.results.length; i++ ) {
+    for ( i=0; i < length; i++ ) {
         processedMDArray[i] = processMovie(mdAPI, i)
     }
     return processedMDArray
