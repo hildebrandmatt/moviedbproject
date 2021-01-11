@@ -22,6 +22,20 @@ nav img:hover{
 
 @media (min-width: 670px) {
 
+    .logo-image{
+        order: 1;
+        margin-left: 65px;
+    }
+
+    .search-icon{
+        display: none;
+    }
+
+    nav{
+        order: 3;
+        margin-right: 65px;
+    }
+
     nav p{
         display: block;
         font-size: 1em;
