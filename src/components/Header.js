@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Nav from './Nav';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../images/logoRed.png';
 import Search from './Search';
 
@@ -31,7 +31,7 @@ const Header = () => {
 
     return (
         <header>
-            <img src={ logo } class="logo-image" />
+            <NavLink to={'/'} exact><img src={ logo } class="logo-image" /></NavLink>
             <Nav hideNav={hideNav} class="logo-image" />
             <Search />
         </header>

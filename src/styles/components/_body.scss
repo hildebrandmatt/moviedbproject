@@ -23,6 +23,18 @@ form{
     display: inline-block;
 }
 
+label{
+    font-size: 0.9em;
+}
+
+select, option{
+    background-color: $color-box;
+    color: $color-font-white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: $font-header;
     font-weight: lighter;
@@ -73,6 +85,7 @@ h1, h2, h3, h4, h5, h6{
     display:block;
 }
 
+//note for later - have poster-fave-button show even when not hovering over
 .poster-fave-button{
     position: absolute;
     right: 20px;    
