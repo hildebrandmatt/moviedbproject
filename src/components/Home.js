@@ -1,4 +1,5 @@
 import poster from '../images/dummyImages/tenet.jpg';
+import MovieDatabase from '../components/MovieDatabase';
 
 const Home = () => {
     return (
