@@ -8,6 +8,7 @@ import TestPage from '../components/TestPage';
 import SingleMovie from '../components/SingleMovie';
 import Favourites from '../components/Favourites';
 import PageNotFound from '../components/PageNotFound';
+import MovieDatabase from '../components/MovieDatabase';
 
 const AppRouter = () => (
 
@@ -18,6 +19,7 @@ const AppRouter = () => (
 				<Route path={'/'} exact><Home /></Route>
 				<Route path={'/about'}><About /></Route>
 				<Route path={'/testpage'}><TestPage /></Route>
+				<Route path={'/moviedatabase'}><MovieDatabase /></Route>
                 {/*<Route path={'/single-movie/:id'}><SingleMovie /></Route>*/}
                 <Route path={'/single-movie'}><SingleMovie /></Route>
 				<Route path={'/favourites'}><Favourites /></Route>
