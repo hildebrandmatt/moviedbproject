@@ -40,6 +40,17 @@ h1, h2, h3, h4, h5, h6{
     font-weight: lighter;
 }
 
+header p{
+    color: $color-font-white;
+    margin: 0;
+}
+
+p{
+    font-size: 13px;
+    font-family: $font-body;
+    color: $color-font-white;
+}
+
 .movie-info-card{
     text-align: left;
     background-color: $color-box;
@@ -92,6 +103,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .hover-info p{
+    color: $color-font-white;
     font-size: 13px;
     width: 180px;
     margin: auto;
@@ -126,20 +138,25 @@ h1, h2, h3, h4, h5, h6{
     padding: 0px 20px 12px 20px;
 }
 
-.quick-intro h1{
+.poster-intro-title{
     font-size: 18px;
+    font-family: $font-header;
     color: $color-font-white;
+    font-weight: lighter;
     margin: 0px;
 }
 
-.quick-intro h3, p{
+.poster-intro-date{
     font-size: 13px;
+    font-family: $font-header;
     color: $color-font-white;
+    font-weight: lighter;
     margin: 0px;
 }
 
-.quick-intro p{
+.poster-intro-rating{
     font-size: 13px;
+    font-family: $font-body;
     color: $color-font-red;
     margin: 0px;
 

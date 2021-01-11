@@ -33,9 +33,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
@@ -53,9 +53,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
@@ -73,9 +73,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
@@ -93,9 +93,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
@@ -113,9 +113,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
@@ -133,9 +133,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
@@ -153,9 +153,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
@@ -173,9 +173,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
@@ -193,9 +193,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
@@ -213,9 +213,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
@@ -233,9 +233,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
@@ -253,9 +253,9 @@ const Home = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>placeholder movie title</h1>
-                                    <h3>placeholder release date</h3>
-                                    <p>placeholder rating stars</p>
+                                    <p class="poster-intro-title">placeholder movie title</p>
+                                    <p class="poster-intro-date">placeholder release date</p>
+                                    <p class="poster-intro-rating">placeholder rating stars</p>
                                 </div>
                             </div>
                         </div>
