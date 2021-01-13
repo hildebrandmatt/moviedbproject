@@ -2,7 +2,7 @@
 
 export const processMovieArray = (mdAPI, length) => {
 
-    const processedMDArray = {}
+    const processedMDArray = []
     var i;
     for ( i=0; i < length; i++ ) {
         processedMDArray[i] = processMovie(mdAPI, i)
@@ -12,7 +12,7 @@ export const processMovieArray = (mdAPI, length) => {
 
 export const processMovie = (mdAPI, arrayItem) => {
 
-    const processedMD = {};
+    const processedMD = [];
 
     processedMD.title = mdAPI.results[arrayItem].title
     processedMD.release_date = formatDate(mdAPI.results[arrayItem].release_date)

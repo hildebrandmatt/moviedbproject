@@ -9,7 +9,7 @@ const MovieDatabase = () => {
     const fetchMovies = async () => {
         const res = await fetch(`${TMDB_BASE_URL}popular${TMDB_API_KEY}&language=en-US&page=1`)
         let data = await res.json()
-        let processedData = processMovieArray(data, 12)
+        let processedData = await processMovieArray(data, 12)
         setMovieArray(processedData)
     }
 
@@ -17,12 +17,13 @@ const MovieDatabase = () => {
         fetchMovies()
     }, [])
 
-    console.log(movieArray)
+    //console.log(movieArray)
 
     return (
         <div class="movie-gallery">
             { movieArray &&
-                movieArray.map((movie) => {
+            movieArray.map((movie) => {
+                return (
                     <div class="movie-info-card">
                         <div class="poster">
                             <img src={ "https://image.tmdb.org/t/p/w500" + movie.poster } />
@@ -35,17 +36,17 @@ const MovieDatabase = () => {
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
-                                    <h1>{movie.title}</h1>
-                                    <h3>{movie.release_date}</h3>
-                                    <p>{movie.rating}</p>
+                                    <p class="poster-intro-title">{movie.title}</p>
+                                    <p class="poster-intro-date">{movie.release_date}</p>
+                                    <p class="poster-intro-rating">{movie.rating}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                })}
+                );
+            })}
         </div>
     )
-
 }
 
 export default MovieDatabase
