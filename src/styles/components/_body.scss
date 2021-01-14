@@ -60,8 +60,6 @@ p{
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 5px;
-    margin-right: 5px;
     box-shadow: 5px 5px 10px #000000;
     border-radius: 10px;
     overflow: hidden;
@@ -75,7 +73,13 @@ p{
 
 .poster-title{
     position: absolute;
-    bottom: 10px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 35px;
+    background: linear-gradient(0deg, rgba(14,12,13,1) 35%, rgba(14,12,13,1) 59%, rgba(0, 0, 0, 0.192) 80%, rgba(14,255,255,0) 100%);
 }
 
 .description{
@@ -84,6 +88,7 @@ p{
     z-index: 2;
     position: absolute; 
     bottom: 0;
+    
 }
 
 .hover-info{
@@ -130,7 +135,7 @@ p{
     border-radius: 10px;
     padding: 7px 9px;
     position: absolute;
-    bottom: 130px;
+    bottom: 140px;
     left: 50%;
     -ms-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
@@ -147,11 +152,9 @@ p{
     width: 240px;
     height: 70px;
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     bottom: 0;
     padding: 0px 20px 12px 20px;
-    background: linear-gradient(0deg, rgba(14,12,13,1) 0%, rgba(14,12,13,1) 18%, rgba(14,255,255,0) 32%, rgba(14,255,255,0) 100%);
-
 }
 
 .poster-intro-title{
@@ -249,6 +252,11 @@ styling for single pages
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+    }
+
+    .movie-info-card{
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 
