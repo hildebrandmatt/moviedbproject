@@ -211,19 +211,23 @@ styling for single pages
     padding: 80px 25px 25px 25px;
     background-color: #0d0d0d;
     box-shadow: 5px 10px 8px black;
-    z-index: -1
+    z-index: -1;
+    height: 480px;
+}
+.about-movie-rating p{
+    text-align: right;
 }
 
 .about-movie-quick-info{
     display: flex;
     justify-content: space-between;
     text-align: left;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .about-synopsis{
     text-align: left;
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 .synopsis-title{
@@ -299,9 +303,10 @@ styling for single pages
     }
 
     .about-movie-title{
+        text-align: left;
         background: none;
         top: -475px;
-        left: 40px;
+        left: 50%;
         padding: 0px;
         font-size: 2em;
     }
