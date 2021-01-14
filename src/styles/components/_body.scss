@@ -54,7 +54,7 @@ p{
 .movie-info-card{
     text-align: left;
     background-color: $color-box;
-    max-width: 240px;
+    width: 240px;
     height: 400px;
     position: relative;
     margin: auto;
@@ -73,14 +73,17 @@ p{
     position: absolute;
 }
 
-//poster-title probably needs styles because the text underneath it
-//goes poof when the title is long
+.poster-title{
+    position: absolute;
+    bottom: 5px;
+}
 
 .description{
     width: 240px;
     height: 400px;
     z-index: 2;
-    position: relative; 
+    position: absolute; 
+    bottom: 0;
     background: linear-gradient(0deg, rgba(14,12,13,1) 0%, rgba(14,12,13,1) 16%, rgba(14,255,255,0) 32%, rgba(14,255,255,0) 100%);
 }
 
@@ -101,7 +104,9 @@ p{
 //note for later - have poster-fave-button show even when not hovering over
 .poster-fave-button{
     position: absolute;
-    right: 20px;    
+    right: 20px;
+    top: 15px;
+    z-index: 5;    
 }
 
 .hover-info p{
@@ -110,6 +115,12 @@ p{
     width: 180px;
     margin: auto;
     margin-top: 90px;
+    //thank you css-tricks for this
+    //alternatively thinking about using clamp.js
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .more-info-btn{
@@ -129,13 +140,13 @@ p{
 
 .more-info-btn:hover{
     color: $color-font-white;
+    background-color: $color-font-red;
     cursor: pointer;
 }
 
 .quick-intro{
     width: 240px;
     height: 70px;
-    position: absolute;
     bottom: 0;
     padding: 0px 20px 12px 20px;
 }
@@ -145,7 +156,7 @@ p{
     font-family: $font-header;
     color: $color-font-white;
     font-weight: lighter;
-    margin: 0px;
+    margin-bottom: 0px;
 }
 
 .poster-intro-date{
@@ -153,7 +164,7 @@ p{
     font-family: $font-header;
     color: $color-font-white;
     font-weight: lighter;
-    margin: 0px;
+    margin: 0px 0px 3px 0px;
 }
 
 .poster-intro-rating{
