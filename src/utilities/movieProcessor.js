@@ -19,6 +19,7 @@ export const processMovie = (mdAPI, arrayItem) => {
     processedMD.rating = mdAPI.results[arrayItem].vote_average
     processedMD.poster = mdAPI.results[arrayItem].poster_path
     processedMD.description = mdAPI.results[arrayItem].overview
+    processedMD.id = mdAPI.results[arrayItem].id
 
     return processedMD
 }

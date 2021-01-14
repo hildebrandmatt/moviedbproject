@@ -1,6 +1,9 @@
 import poster from '../images/dummyImages/tenet.jpg';
 
 const SingleMovie = () => {
+
+    console.log(window.location.pathname)
+
     return (
         <main>
             <div className="single-movie-content">

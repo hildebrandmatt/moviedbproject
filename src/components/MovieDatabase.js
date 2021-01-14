@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { TMDB_API_KEY, TMDB_BASE_URL } from '../globals/variables';
 import { processMovieArray } from '../utilities/movieProcessor';
+import { NavLink } from 'react-router-dom';
 
 const MovieDatabase = props => {
 
@@ -31,7 +32,7 @@ const MovieDatabase = props => {
                         <div class="description">
                             <div class="hover-info">
                                 <p>{movie.description}</p>
-                                <button class="more-info-btn">More info</button>
+                                <NavLink to={ "/single-movie/" + movie.id } exact><button class="more-info-btn">More info</button></NavLink>
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">
