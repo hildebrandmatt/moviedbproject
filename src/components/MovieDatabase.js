@@ -28,9 +28,9 @@ const MovieDatabase = () => {
                         <div class="poster">
                             <img src={ "https://image.tmdb.org/t/p/w500" + movie.poster } />
                         </div>
+                        <button class="poster-fave-button">heart</button>
                         <div class="description">
                             <div class="hover-info">
-                                <button class="poster-fave-button">heart</button>
                                 <p>{movie.description}</p>
                                 <button class="more-info-btn">More info</button>
                             </div>
