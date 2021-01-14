@@ -1,7 +1,15 @@
 import poster from '../images/dummyImages/tenet.jpg';
 import MovieDatabase from '../components/MovieDatabase';
+import { useState, useEffect } from 'react';
 
 const Home = () => {
+
+    const [sortorder, setSortorder] = useState("popular")
+
+    const handleChange = (e) => {
+        setSortorder(e.target.value)
+    }
+
     return (
         <main>
             <div class="home-section">
@@ -11,15 +19,15 @@ const Home = () => {
                     </div>
                     <form>
                         <label for="selected-category">Display by: &nbsp; </label>
-                        <select name="selected-category" id="selected-category" class="selected-category">
+                        <select name="selected-category" id="selected-category" class="selected-category" onChange={handleChange}>
                             <option value="popular">Popular</option>
-                            <option value="now-playing">Now Playing</option>
-                            <option value="top-rated">Top Rated</option>
+                            <option value="now_playing">Now Playing</option>
+                            <option value="top_rated">Top Rated</option>
                             <option value="upcoming">Upcoming</option>
                         </select>
                     </form>
                 </div>
-                <MovieDatabase />
+                <MovieDatabase sortOrder={sortorder} />
 
             </div>
         </main>

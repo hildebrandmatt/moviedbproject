@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import { TMDB_API_KEY, TMDB_BASE_URL } from '../globals/variables';
 import { processMovieArray } from '../utilities/movieProcessor';
 
-const MovieDatabase = () => {
+const MovieDatabase = props => {
 
     const [movieArray, setMovieArray] = useState(null)
 
     const fetchMovies = async () => {
-        const res = await fetch(`${TMDB_BASE_URL}popular${TMDB_API_KEY}&language=en-US&page=1`)
+        const res = await fetch(`${TMDB_BASE_URL}${props.sortOrder}${TMDB_API_KEY}&language=en-US&page=1`)
         let data = await res.json()
         let processedData = await processMovieArray(data, 12)
         setMovieArray(processedData)
@@ -15,9 +15,8 @@ const MovieDatabase = () => {
 
     useEffect(() => {
         fetchMovies()
-    }, [])
-
-    //console.log(movieArray)
+        console.log(props.sortOrder)
+    }, [props.sortOrder])
 
     return (
         <div class="movie-gallery">
