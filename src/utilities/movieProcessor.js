@@ -24,6 +24,20 @@ export const processMovie = (mdAPI, arrayItem) => {
     return processedMD
 }
 
+export const processSingleMovie = (mdAPI) => {
+
+    const processedMD = [];
+
+    processedMD.title = mdAPI.title
+    processedMD.release_date = formatDate(mdAPI.release_date)
+    processedMD.rating = mdAPI.vote_average
+    processedMD.poster = mdAPI.poster_path
+    processedMD.description = mdAPI.overview
+    processedMD.id = mdAPI.id
+
+    return processedMD
+}
+
 const formatDate = ( date ) => {
 
     const dateToFormat = date
