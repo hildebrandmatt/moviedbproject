@@ -1,7 +1,8 @@
 import StarRatings from '../react-star-ratings';
+//starratings is in the package/package-lock.json
  
-//crying noises
-class Foo extends Component {
+/*crying noises
+class starRating extends React.Component {
     changeRating( newRating, name ) {
       this.setState({
         rating: newRating
@@ -20,3 +21,5 @@ class Foo extends Component {
       );
     }
 }
+
+export default StarRating; */
