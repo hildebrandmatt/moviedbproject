@@ -9,7 +9,6 @@ class Foo extends Component {
     }
  
     render() {
-      // rating = 2;
       return (
         <StarRatings
           rating={this.movie.rating}
