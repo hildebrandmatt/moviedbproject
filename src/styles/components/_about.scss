@@ -26,6 +26,10 @@ hr{
 //or side padding, whichever ends up working better
 
 @media (min-width: 670px){
+    .fave-content-box{
+        margin-top: 25px;
+    }
+
     .content-box{
         margin: 25px 80px 25px 80px;
         padding-left: 80px;
@@ -35,6 +39,7 @@ hr{
     .content-box h1{
         text-align: left;
         padding-left: 20px;
+        padding-top: 30px;
     }
 
     hr{
@@ -43,18 +48,48 @@ hr{
 }
 
 @media (min-width: 670px){
+
+    .fave-content-box{
+        margin-top: 25px;
+    }
+
     .content-box h1{
         text-align: left;
-        padding-left: 20px
+        padding-left: 20px;
     }
 }
 
-@media (min-width: 1020px){
-    //adjust these later
+@media (min-width: 900px){
+    
+    .fave-content-box{
+        margin-top: 25px;
+    }
+
     .content-box{
-        margin: 25px 80px 25px 80px;
-        padding-left: 200px;
-        padding-right: 200px;
+        margin: 25px 120px 25px 120px;
+    }
+}
+
+
+@media (min-width: 1020px){
+
+    .content-box{
+        margin: 80px 100px 25px 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .fave-content-box{
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .content-box{
+        margin: 80px 280px 80px 280px;
+        padding-left: 110px;
+        padding-right: 110px;
     }
 
     .content-box h1{
@@ -62,7 +97,20 @@ hr{
         padding-left: 20px;
     }
 
-    hr{
-        max-width: 800px;
+    .fave-content-box{
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 1400px){
+    
+    .content-box{
+        margin: 80px 390px 80px 390px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    
+    .fave-content-box{
+        margin-top: 25px;
     }
 }
