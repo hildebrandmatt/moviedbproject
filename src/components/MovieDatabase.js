@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { TMDB_API_KEY, TMDB_BASE_URL } from '../globals/variables';
 import { processMovieArray } from '../utilities/movieProcessor';
 import { NavLink } from 'react-router-dom';
+import { FavoriteButton } from '../components/FavoriteButton';
 
 const MovieDatabase = props => {
 
@@ -28,7 +29,7 @@ const MovieDatabase = props => {
                         <div class="poster">
                             <img src={ "https://image.tmdb.org/t/p/w500" + movie.poster } />
                         </div>
-                        <button class="poster-fave-button">heart</button>
+                        <FavoriteButton />
                         <div class="description">
                             <div class="hover-info">
                                 <p>{movie.description}</p>
