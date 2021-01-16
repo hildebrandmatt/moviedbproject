@@ -243,6 +243,22 @@ styling for single pages
     position: relative;
     left: 120px;
 }
+/*
+-----------------------------
+styling for favourite buttons
+-----------------------------
+*/
+.favorite-button{
+    z-index: 100;
+    position: relative;
+    width: 32px;
+    left: 200px;
+    top: 8px;
+}
+
+.about-movie-box .favorite-button{
+    left: 150px;
+}
 
 
 //arbitrary min width for now, just for testing

@@ -1,7 +1,22 @@
+import favoriteButton from '../images/favouriteButtonRed.png';
+import unfavoriteButton from '../images/unfavouriteButtonRed.png';
+import { useState, useEffect } from 'react';
+
 const FavoriteButton = () => {
 
-    return (        
-        <button class="poster-fave-button">heart</button>
+    const [ favorite, setFavorite ] = useState(false)
+
+    const faveClick = () => {
+        console.log('this is:', this)
+        //console.log(this.getAttribute('src'))
+    }
+    
+    return (
+        <div>
+            <img    class="favorite-button"
+                    onClick={() => setFavorite(prevMode => !prevMode)}
+                    src={favorite ? favoriteButton : unfavoriteButton} />
+        </div>
     )
 }
 

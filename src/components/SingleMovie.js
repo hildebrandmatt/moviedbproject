@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { TMDB_API_KEY, TMDB_BASE_URL } from '../globals/variables';
 import { processSingleMovie } from '../utilities/movieProcessor';
+import FavoriteButton from '../components/FavoriteButton';
 
 const SingleMovie = () => {
 
@@ -46,7 +47,7 @@ const SingleMovie = () => {
                         <p class="synopsis-title">Synopsis</p>
                         <p>{movieInfo.description}</p>
                     </div>
-                    <button class="about-fave-button">nya</button>
+                    <FavoriteButton movieID={movieInfo.id} />
                 </div>
             </div>
         }
