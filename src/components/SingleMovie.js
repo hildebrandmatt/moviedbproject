@@ -18,7 +18,6 @@ const SingleMovie = () => {
 
     useEffect(() => {
         fetchMovie()
-        console.log(movieInfo)
     }, [])
 
     return (

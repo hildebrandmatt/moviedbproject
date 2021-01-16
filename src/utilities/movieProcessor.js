@@ -42,11 +42,12 @@ const formatDate = ( date ) => {
 
     const dateToFormat = date
     dateToFormat.split('')
+    var day = "00"
 
-    if(dateToFormat[8] != '0') {
-        var day = dateToFormat[8] + dateToFormat[9]
+    if(dateToFormat[8] !== '0') {
+        day = dateToFormat[8] + dateToFormat[9]
     } else {
-        var day = dateToFormat[9]
+        day = dateToFormat[9]
     }
 
     var month = dateToFormat[5] + dateToFormat[6]
@@ -88,7 +89,6 @@ const formatDate = ( date ) => {
             month = "December"
             break
         default:
-            month = month
     }
 
     var year = dateToFormat[0] + dateToFormat[1] + dateToFormat[2] + dateToFormat[3]
