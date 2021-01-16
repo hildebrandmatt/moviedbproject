@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { TMDB_API_KEY, TMDB_BASE_URL } from '../globals/variables';
 import { processMovieArray } from '../utilities/movieProcessor';
 import { NavLink } from 'react-router-dom';
-import { FavoriteButton } from '../components/FavoriteButton';
+import FavoriteButton from '../components/FavoriteButton';
 
 const MovieDatabase = props => {
 

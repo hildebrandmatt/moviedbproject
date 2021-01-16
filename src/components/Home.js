@@ -1,6 +1,5 @@
-import poster from '../images/dummyImages/tenet.jpg';
 import MovieDatabase from '../components/MovieDatabase';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const Home = () => {
 
