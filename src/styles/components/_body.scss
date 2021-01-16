@@ -57,7 +57,8 @@ p{
     width: 240px;
     height: 400px;
     position: relative;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 40px;
     margin-bottom: 40px;
     box-shadow: 5px 5px 10px #000000;
@@ -263,16 +264,17 @@ styling for favourite buttons
 
 //arbitrary min width for now, just for testing
 @media (min-width: 460px){
-    .movie-gallery{
-        margin: 0px 65px 0px 65px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
 
     .movie-info-card{
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    .movie-info-card:first-child,
+    .movie-info-card:nth-child(2) {
+        margin-top: 40px
     }
 }
 
@@ -306,6 +308,15 @@ classes
     .favourites-title{
         margin-left: 80px;
         justify-content: initial;
+    }
+
+    .movie-gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        margin-left: 14%;
+        margin-right: 14%;
+        margin-bottom: 80px;
     }
 
 }
@@ -343,5 +354,59 @@ styling for single pages
         width: 450px;
         padding: 45px 35px 25px 85px;
         left: 140px;
+    }
+/*
+------------------------
+styling for movie gallery
+------------------------
+*/
+    .movie-gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .movie-info-card:nth-child(3) {
+        margin-top: 40px
+    }
+}
+
+@media (min-width: 1200px){
+    .movie-gallery{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .movie-info-card:nth-child(4) {
+        margin-top: 40px
+    }
+}
+
+@media (min-width: 1450px){
+    .movie-gallery{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .movie-info-card:nth-child(5) {
+        margin-top: 40px
+    }
+}
+
+@media (min-width: 1700px){
+    .movie-gallery{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .movie-info-card:nth-child(6) {
+        margin-top: 40px
     }
 }
