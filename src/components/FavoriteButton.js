@@ -1,41 +1,47 @@
 import favoriteButton from '../images/favouriteButtonRed.png';
 import unfavoriteButton from '../images/unfavouriteButtonRed.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const FavoriteButton = props => {
 
     const [ favorites, setFavorites ] = useState([])
+    const getArray = JSON.parse(localStorage.getItem('favorites') || '0');
+
+    useEffect(() => {
+        if (getArray !== 0) {
+            setFavorites([...getArray])
+        }
+        console.log("hello")
+    }, [])
 
     const addFav = (props: any) => {
-        console.log(favorites)
+        console.log(getArray)
+        //console.log(favorites)
         let array = favorites;
-        console.log(array);
+        //console.log(array);
         let addArray = true;
         array.map((item: any, key: number) => {
             if ( item === props.movieID ) {
                 array.splice(key, 1);
                 addArray = false;
-                console.log("hello")
+                //console.log("hello")
             }
         })
         if (addArray) {
             array.push(props.movieID)
         }
-        console.log(array)
+        //console.log(array)
         setFavorites([...array])
-        console.log(favorites)
-        /*let array = favorites;
-        let addArray = true;
-        array.map((item: any, key: number) => {
-            if (item === props.i) {
-                array.splice(key, 1);
-                addArray = false;
-            }
-        });
-        if (addArray) {
-            array.push(props.i);
+        //console.log(favorites)
+
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+
+        var storage = localStorage.getItem('favMovie' + (props.movieID) || '0')
+        if (storage == null) {
+            localStorage.setItem(('favMovie' + (props.movieID)), JSON.stringify(props.items));
+        } else {
+            localStorage.removeItem('favMovie' + (props.movieID));
         }
-        setFavorites([...array])*/
     }
 
     const movieID = props.movieID
