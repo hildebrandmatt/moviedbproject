@@ -15,6 +15,8 @@ const FavoriteButton = props => {
 
     const addFav = props => {
 
+        console.log(props.movieID)
+
         var storage = localStorage.getItem('favMovie' + (props.movieID) || '0')
         if (storage == null) {
             localStorage.setItem(('favMovie' + (props.movieID)), JSON.stringify(props.items));
