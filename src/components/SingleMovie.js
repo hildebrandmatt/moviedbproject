@@ -46,7 +46,7 @@ const SingleMovie = () => {
                         <p class="synopsis-title">Synopsis</p>
                         <p>{movieInfo.description}</p>
                     </div>
-                    <FavoriteButton movieID={movieInfo.id} />
+                    {/*<FavoriteButton movieID={movieInfo.id} />*/}
                 </div>
             </div>
         }
