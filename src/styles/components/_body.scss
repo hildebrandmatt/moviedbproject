@@ -314,8 +314,8 @@ classes
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
-        margin-left: 14%;
-        margin-right: 14%;
+        margin-left: 20%;
+        margin-right: 20%;
         margin-bottom: 80px;
     }
 
@@ -363,8 +363,7 @@ styling for movie gallery
     .movie-gallery{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin-left: 10%;
-        margin-right: 10%;
+        justify-content: space-around;
     }
 
     .movie-info-card:nth-child(3) {
@@ -376,8 +375,7 @@ styling for movie gallery
     .movie-gallery{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 5%;
-        margin-right: 5%;
+        justify-content: space-around;
     }
 
     .movie-info-card:nth-child(4) {
@@ -389,8 +387,7 @@ styling for movie gallery
     .movie-gallery{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        margin-left: 5%;
-        margin-right: 5%;
+        justify-content: space-around;
     }
 
     .movie-info-card:nth-child(5) {
@@ -402,8 +399,7 @@ styling for movie gallery
     .movie-gallery{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        margin-left: 7%;
-        margin-right: 7%;
+        justify-content: space-around;
     }
 
     .movie-info-card:nth-child(6) {
