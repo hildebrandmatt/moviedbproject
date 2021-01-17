@@ -7,14 +7,14 @@ const Favourites = () => {
                 <h1 class="title-red">Favourite&nbsp;</h1> <h1 class="title-white">Movies</h1>
             </div>
             <div class="no-favourites">
-                <div class="content-box">
+                <div class="content-box fave-content-box">
                     <p>Oh no! Looks like you have no favourites. Add movies to your
                         favourites by clicking the [heart] on the movie cards.
                     </p>
                 </div>
             </div>
 
-            <div class="favourites-secion">
+            <div class="favourites-section">
                 <div class="movie-gallery">
                     
                 <div class="movie-info-card">
