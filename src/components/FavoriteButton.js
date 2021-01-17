@@ -4,40 +4,24 @@ import { useEffect, useState } from 'react';
 
 const FavoriteButton = props => {
 
-    const [ favorites, setFavorites ] = useState([])
+    const [ favorite, setFavorite ] = useState(false)
     const getArray = JSON.parse(localStorage.getItem('favorites') || '0')
 
-    console.log(getArray)
-    console.log(favorites)
-
     useEffect(() => {
-        if (getArray !== 0) {
-            setFavorites([...getArray])
-            console.log("hello")
+        if (localStorage.getItem('favMovie' + (props.movieID))) {
+            setFavorite(true)
         }
     }, [])
 
     const addFav = props => {
-        let array = favorites;
-        let addArray = true;
-        array.map((item: any, key: number) => {
-            if (item === props.movieID) {
-                array.splice(key, 1);
-                addArray = false;
-            }
-        });
-        if ( addArray ) {
-            array.push(props.movieID);
-        }
-        setFavorites([...array])
-
-        localStorage.setItem("favorites", JSON.stringify(favorites));
 
         var storage = localStorage.getItem('favMovie' + (props.movieID) || '0')
         if (storage == null) {
             localStorage.setItem(('favMovie' + (props.movieID)), JSON.stringify(props.items));
+            setFavorite(true)
         } else {
             localStorage.removeItem('favMovie' + (props.movieID));
+            setFavorite(false)
         }
     }
 
@@ -45,8 +29,7 @@ const FavoriteButton = props => {
     
     return (
         <div>
-            {/*{localStorage.getItem('favMovie' + movieID) ? (*/}
-            {favorites.includes(movieID) ? (
+            {favorite ? (
                 <img    class="favorite-button"
                         src={favoriteButton}
                         onClick={() => addFav({ movieID })} />
