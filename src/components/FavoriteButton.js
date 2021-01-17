@@ -5,8 +5,31 @@ import { useEffect, useState } from 'react';
 const FavoriteButton = props => {
 
     const [ favorites, setFavorites ] = useState([])
+    const getArray = JSON.parse(localStorage.getItem('favorites') || '0')
 
-    const addFav = (props: any) => {
+    console.log(getArray)
+    console.log(favorites)
+
+    useEffect(() => {
+        if (getArray !== 0) {
+            setFavorites([...getArray])
+            console.log("hello")
+        }
+    }, [])
+
+    const addFav = props => {
+        let array = favorites;
+        let addArray = true;
+        array.map((item: any, key: number) => {
+            if (item === props.movieID) {
+                array.splice(key, 1);
+                addArray = false;
+            }
+        });
+        if ( addArray ) {
+            array.push(props.movieID);
+        }
+        setFavorites([...array])
 
         localStorage.setItem("favorites", JSON.stringify(favorites));
 
@@ -16,14 +39,14 @@ const FavoriteButton = props => {
         } else {
             localStorage.removeItem('favMovie' + (props.movieID));
         }
-        setFavorites()
     }
 
     const movieID = props.movieID
     
     return (
         <div>
-            {localStorage.getItem('favMovie' + movieID) ? (
+            {/*{localStorage.getItem('favMovie' + movieID) ? (*/}
+            {favorites.includes(movieID) ? (
                 <img    class="favorite-button"
                         src={favoriteButton}
                         onClick={() => addFav({ movieID })} />
