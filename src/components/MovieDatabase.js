@@ -17,7 +17,6 @@ const MovieDatabase = props => {
 
     useEffect(() => {
         fetchMovies()
-        console.log(props.sortOrder)
     }, [props.sortOrder])
 
     return (
