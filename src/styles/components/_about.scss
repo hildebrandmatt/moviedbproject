@@ -19,15 +19,25 @@ hr{
     max-width: 75%;
 }
 
+.fave-content-box{
+    margin-top: 25px;
+    padding: 35px;
+    p{
+        display: inline;
+        vertical-align: middle;
+    }
+    img{
+        display: inline;
+        vertical-align: middle;
+    }
+}
+
+.no-favorites-favorite-button{
+    width: 25px;
+    height: 25px;
+}
 
 @media (min-width: 41.875em){
-    .fave-content-box{
-        margin-top: 25px;
-    }
-
-    .no-favorites-favorite-button{
-        width: 32px;
-    }
 
     .content-box{
         margin: 25px 80px 25px 80px;
