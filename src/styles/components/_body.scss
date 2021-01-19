@@ -24,7 +24,7 @@ form{
 }
 
 label{
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 select, option{
@@ -46,7 +46,7 @@ header p{
 }
 
 p{
-    font-size: 13px;
+    font-size: 0.8rem;
     font-family: $font-body;
     color: $color-font-white;
 }
@@ -100,6 +100,19 @@ p{
     background-color: rgba(14,12,13,0.85);
     position: relative;
     display: none;
+    p{
+        color: $color-font-white;
+        font-size: 0.8rem;
+        width: 180px;
+        margin: auto;
+        margin-top: 90px;
+        //thank you css-tricks for this
+        //alternatively thinking about using clamp.js
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
 
 }
 
@@ -113,20 +126,6 @@ p{
     top: 15px;
     cursor: pointer;
     z-index: 5;    
-}
-
-.hover-info p{
-    color: $color-font-white;
-    font-size: 13px;
-    width: 180px;
-    margin: auto;
-    margin-top: 90px;
-    //thank you css-tricks for this
-    //alternatively thinking about using clamp.js
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 
 .more-info-btn{
@@ -160,7 +159,7 @@ p{
 }
 
 .poster-intro-title{
-    font-size: 18px;
+    font-size: 1.1rem;
     font-family: $font-header;
     color: $color-font-white;
     font-weight: lighter;
@@ -168,7 +167,7 @@ p{
 }
 
 .poster-intro-date{
-    font-size: 13px;
+    font-size: 0.8rem;
     font-family: $font-body;
     color: $color-font-white;
     font-style:italic;
@@ -176,7 +175,7 @@ p{
 }
 
 .poster-intro-rating{
-    font-size: 13px;
+    font-size: 0.8rem;
     font-family: $font-body;
     color: $color-font-red;
     margin: 0px;
@@ -186,65 +185,6 @@ label{
     color: $color-font-white;
 }
 
-/*
-------------------------
-styling for single pages
-------------------------
-*/
-.about-movie-poster{
-    position: relative;
-    max-width: 80%;
-    height: auto;
-    margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #000000;
-    z-index: 1;
-}
-
-.about-movie-title{
-    position: relative;
-    bottom: 85px;
-    color: $color-font-white;
-    padding-top: 45px;
-    padding-bottom: 12px;
-    margin: 0;
-    background: linear-gradient(0deg, rgba(14,12,13,1) 5%, rgba(14,12,13,1) 5%, rgba(0, 0, 0, 0.192) 70%, rgba(14,255,255,0) 100%);
-    width: 350px;
-}
-
-.about-movie-box{
-    position: relative;
-    bottom: 135px;
-    padding: 80px 25px 25px 25px;
-    background-color: #0d0d0d;
-    box-shadow: 5px 10px 8px black;
-}
-.about-movie-rating p{
-    text-align: right;
-}
-
-.about-movie-quick-info{
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    padding-bottom: 5px;
-}
-
-.about-synopsis{
-    text-align: left;
-    padding-top: 5px;
-}
-
-.synopsis-title{
-    padding-bottom: 5px;
-    font-weight: bold;
-}
-
-.about-fave-button{
-    margin-top: 25px;
-    position: relative;
-    left: 120px;
-}
 /*
 -----------------------------
 styling for favourite buttons
@@ -263,8 +203,7 @@ styling for favourite buttons
 }
 
 
-//arbitrary min width for now, just for testing
-@media (min-width: 460px){
+@media (min-width: 28.75em){
 
     .movie-info-card{
         margin-left: auto;
@@ -279,22 +218,13 @@ styling for favourite buttons
     }
 }
 
-@media (min-width: 670px){
-/*
-------------------------
-elements
-------------------------
-*/
+@media (min-width: 41.875em){
+
     form{
         margin-top: 85px;
         margin-right: 80px;
     }
 
-/*
-------------------------
-classes
-------------------------
-*/
     .home-bar{
         display: flex;
         justify-content: space-between;
@@ -322,45 +252,8 @@ classes
 
 }
 
-@media (min-width: 900px){
-/*
-------------------------
-styling for single pages
-------------------------
-*/
-    .single-movie-content{
-        margin: auto;
-    }
+@media (min-width: 56.25em){
 
-    .about-movie-poster{
-        width: 325px;
-        margin-top: 85px;
-        left: -200px;
-    }
-
-    .about-movie-title{
-        text-align: left;
-        background: none;
-        top: -475px;
-        left: 50%;
-        padding: 0px;
-        font-size: 2em;
-    }
-
-    .about-movie-box{
-        margin: auto;
-        margin-top: 20px;
-        border-radius: 15px;
-        top: -475px;
-        width: 450px;
-        padding: 45px 35px 25px 85px;
-        left: 140px;
-    }
-/*
-------------------------
-styling for movie gallery
-------------------------
-*/
     .movie-gallery{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -372,7 +265,7 @@ styling for movie gallery
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 75em){
     .movie-gallery{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -384,7 +277,7 @@ styling for movie gallery
     }
 }
 
-@media (min-width: 1450px){
+@media (min-width: 90em){
     .movie-gallery{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -396,7 +289,7 @@ styling for movie gallery
     }
 }
 
-@media (min-width: 1700px){
+@media (min-width: 106.25em){
     .movie-gallery{
         display: grid;
         grid-template-columns: repeat(6, 1fr);

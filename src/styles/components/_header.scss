@@ -36,7 +36,7 @@ a{
 //these are all gonna be media query, since mobile uses icons
 //still needa work out how to change the font colour while on page
 
-@media (min-width: 670px) {
+@media (min-width: 41.875em) {
 
     a:hover{
         color: $color-font-red;

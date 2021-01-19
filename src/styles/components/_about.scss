@@ -21,11 +21,8 @@ hr{
     max-width: 75%;
 }
 
-//media query notes for later
-//desktop width the stuff inside content-box will have wider side margins
-//or side padding, whichever ends up working better
 
-@media (min-width: 670px){
+@media (min-width: 41.875em){
     .fave-content-box{
         margin-top: 25px;
     }
@@ -47,20 +44,7 @@ hr{
     }
 }
 
-@media (min-width: 670px){
-
-    .fave-content-box{
-        margin-top: 25px;
-    }
-
-    .content-box h1{
-        text-align: left;
-        padding-left: 20px;
-    }
-}
-
-@media (min-width: 900px){
-    
+@media (min-width: 56.25em){
     .fave-content-box{
         margin-top: 25px;
     }
@@ -71,7 +55,7 @@ hr{
 }
 
 
-@media (min-width: 1020px){
+@media (min-width: 63.75em){
 
     .content-box{
         margin: 80px 100px 25px 100px;
@@ -84,7 +68,7 @@ hr{
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 75em){
 
     .content-box{
         margin: 80px 280px 80px 280px;
@@ -102,7 +86,7 @@ hr{
     }
 }
 
-@media (min-width: 1400px){
+@media (min-width: 87.5){
     
     .content-box{
         margin: 80px 390px 80px 390px;

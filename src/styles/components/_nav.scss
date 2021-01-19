@@ -34,7 +34,7 @@ input{
     font-style: italic;
 }
 
-@media (min-width: 670px) {
+@media (min-width: 41.875em) {
 
     .logo-image{
         order: 1;
@@ -57,7 +57,7 @@ input{
 
     nav p{
         display: block;
-        font-size: 1em;
+        font-size: 1rem;
         font-style: none;
     }
 
