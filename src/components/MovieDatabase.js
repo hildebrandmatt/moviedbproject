@@ -3,6 +3,7 @@ import { TMDB_API_KEY, TMDB_BASE_URL } from '../globals/variables';
 import { processMovieArray } from '../utilities/movieProcessor';
 import { NavLink } from 'react-router-dom';
 import FavoriteButton from '../components/FavoriteButton';
+import RatingStars from '../components/RatingStars';
 
 const MovieDatabase = props => {
 
@@ -38,7 +39,7 @@ const MovieDatabase = props => {
                                 <div class="poster-title">
                                     <p class="poster-intro-title">{movie.title}</p>
                                     <p class="poster-intro-date">{movie.release_date}</p>
-                                    <p class="poster-intro-rating">{movie.rating}</p>
+                                    <RatingStars rating={movie.rating} />
                                 </div>
                             </div>
                         </div>

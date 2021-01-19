@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { TMDB_API_KEY, TMDB_BASE_URL } from '../globals/variables';
 import { processSingleMovie } from '../utilities/movieProcessor';
 import FavoriteButton from '../components/FavoriteButton';
+import RatingStars from '../components/RatingStars';
 
 const SingleMovie = () => {
 
@@ -38,7 +39,7 @@ const SingleMovie = () => {
                         </div>
                         <div class="about-movie-rating">
                             <p><b>Rating</b></p>
-                            <p>{movieInfo.rating}</p>
+                            <RatingStars rating={movieInfo.rating} />
                         </div>
                     </div>
                     <hr />
