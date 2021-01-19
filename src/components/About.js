@@ -10,7 +10,7 @@ const About = () => {
                     favourites is as easy as pressing the heart button on the posters.
                 </p>
                 <p>
-                    Add TMDB disclaimer here later
+                This product uses the TMDb API but is not endorsed or certified by TMDb.
                 </p>
             </div>
             

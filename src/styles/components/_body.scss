@@ -198,6 +198,7 @@ styling for single pages
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #000000;
+    z-index: 1;
 }
 
 .about-movie-title{
@@ -208,6 +209,7 @@ styling for single pages
     padding-bottom: 12px;
     margin: 0;
     background: linear-gradient(0deg, rgba(14,12,13,1) 5%, rgba(14,12,13,1) 5%, rgba(0, 0, 0, 0.192) 70%, rgba(14,255,255,0) 100%);
+    width: 350px;
 }
 
 .about-movie-box{
@@ -216,7 +218,6 @@ styling for single pages
     padding: 80px 25px 25px 25px;
     background-color: #0d0d0d;
     box-shadow: 5px 10px 8px black;
-    z-index: -1;
 }
 .about-movie-rating p{
     text-align: right;
