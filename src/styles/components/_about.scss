@@ -4,16 +4,14 @@
     background-color: $color-box;
     border-radius: 15px;
     box-shadow: 5px 10px 8px black;
-}
-
-.content-box h1{
-    color: $color-font-white;
-    margin: 0;
-    text-align: center;
-}
-
-.content-box p{
-    margin: 15px;
+    h1{
+        color: $color-font-white;
+        margin: 0;
+        text-align: center;
+    }
+    p{
+        margin: 15px;
+    }
 }
 
 hr{
@@ -31,12 +29,11 @@ hr{
         margin: 25px 80px 25px 80px;
         padding-left: 80px;
         padding-right: 80px;
-    }
-
-    .content-box h1{
-        text-align: left;
-        padding-left: 20px;
-        padding-top: 30px;
+        h1{
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 30px;
+        }
     }
 
     hr{
@@ -74,11 +71,10 @@ hr{
         margin: 80px 280px 80px 280px;
         padding-left: 110px;
         padding-right: 110px;
-    }
-
-    .content-box h1{
-        text-align: left;
-        padding-left: 20px;
+        h1{
+            text-align: left;
+            padding-left: 20px;
+        }
     }
 
     .fave-content-box{

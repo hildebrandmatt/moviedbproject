@@ -53,20 +53,16 @@ input{
     nav{
         order: 3;
         margin-right: 65px;
-    }
-
-    nav p{
-        display: block;
-        font-size: 1rem;
-        font-style: none;
-    }
-
-    nav p:hover{
-        color: $color-font-red;
-    }
-
-    nav img{
-        display: none;
+        p{
+            display: block;
+            font-size: 1rem;
+        }
+        p:hover{
+            color: $color-font-red;
+        }
+        img{
+            display: none;
+        }
     }
 
 }
