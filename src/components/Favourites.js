@@ -7,7 +7,7 @@ import RatingStars from '../components/RatingStars';
 
 const Favourites = () => {
 
-    const [movieArray, setMovieArray] = useState(null)
+    const [movieArray, setMovieArray] = useState([])
 
     const allFaves = () => {
         var values = [],
@@ -50,7 +50,7 @@ const Favourites = () => {
             <div className="page-title favourites-title">
                 <h1 class="title-red">Favourite&nbsp;</h1> <h1 class="title-white">Movies</h1>
             </div>
-            {favArray.length == 0 ?
+            {movieArray.length === 0 ?
             <div class="no-favourites">
                 <div class="content-box fave-content-box">
                     <p>Oh no! Looks like you have no favourites. Add movies to your

@@ -5,32 +5,50 @@ import { useEffect, useState } from 'react';
 const FavoriteButton = props => {
 
     const [ favorite, setFavorite ] = useState(false)
-    const getArray = JSON.parse(localStorage.getItem('favorites') || '0')
+    var tempArray = []
 
     useEffect(() => {
-        if (localStorage.getItem('favMovie' + (props.movieID))) {
-            setFavorite(true)
+        tempArray = JSON.parse(localStorage.getItem('favorites'))
+        if ( !tempArray ) {
+            tempArray = []
         }
-    }, [])
+        var i
+        setFavorite(false)
+        for (i = 0; i < tempArray.length; i++) {
+            if (tempArray[i] == props.movieID) {
+                setFavorite(true)
+            }
+        }
+    }, [tempArray])
 
     const addFav = props => {
-
-        console.log(props.movieID)
-
-        var storage = localStorage.getItem('favMovie' + (props.movieID) || '0')
-        if (storage == null) {
-            localStorage.setItem(('favMovie' + (props.movieID)), props.movieID);
+        tempArray = JSON.parse(localStorage.getItem('favorites'))
+        if ( !tempArray ) {
+            tempArray = []
+        }
+        var exists = false
+        var i  
+        for (i = 0; i < tempArray.length; i++) {
+            if (tempArray[i] == props.movieID) {
+                exists = true
+                var index = i
+            }
+        }
+        if (!exists) {
+            tempArray.push(props.movieID)
             setFavorite(true)
         } else {
-            localStorage.removeItem('favMovie' + (props.movieID));
+            tempArray.splice(index, 1)
             setFavorite(false)
         }
+        localStorage.setItem('favorites', JSON.stringify(tempArray))
     }
 
     const movieID = props.movieID
     
     return (
         <div>
+        {console.log("rerender button")}
             {favorite ? (
                 <img    class="favorite-button"
                         src={favoriteButton}
