@@ -4,6 +4,7 @@ import { processSingleMovie } from '../utilities/movieProcessor';
 import { NavLink } from 'react-router-dom';
 import FavoriteButton from './FavoriteButton';
 import RatingStars from './RatingStars';
+import unfavoriteButton from '../images/unfavouriteButtonRed.png';
 
 const FavouriteMovies = () => {
 
@@ -38,7 +39,7 @@ const FavouriteMovies = () => {
             <div class="no-favourites">
                 <div class="content-box fave-content-box">
                     <p>Oh no! Looks like you have no favourites. Add movies to your
-                        favourites by clicking the [heart] on the movie cards.
+                        favourites by clicking the </p><img src={unfavoriteButton} class="favorite-button" alt="favorite button"></img><p> on the movie cards.
                     </p>
                 </div>
             </div> 
