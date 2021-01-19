@@ -21,7 +21,8 @@ styling for single pages
     padding-bottom: 12px;
     margin: 0;
     background: linear-gradient(0deg, rgba(14,12,13,1) 5%, rgba(14,12,13,1) 5%, rgba(0, 0, 0, 0.192) 70%, rgba(14,255,255,0) 100%);
-    width: 350px;
+    max-width: 100%;
+    z-index: 12;
 }
 
 .about-movie-box{
@@ -52,10 +53,32 @@ styling for single pages
     font-weight: bold;
 }
 
-.about-fave-button{
-    margin-top: 25px;
+.about-movie-box .favorite-button{
+    z-index: 100;
     position: relative;
-    left: 120px;
+    width: 32px;
+    top: 8px;
+    right: -45%;
+}
+
+@media (min-width: 31.25em){
+    .about-movie-poster{
+        max-width: 55%
+    }
+
+    .about-movie-box{
+        margin: auto;
+        width: 80%;
+        border-radius: 15px;
+        padding: 80px 35px 35px 35px;
+    }
+
+    .about-movie-title{
+        margin: auto;
+        z-index: 3;
+        max-width: 55%
+    }
+
 }
 
 @media (min-width: 56.25em){
@@ -73,7 +96,7 @@ styling for single pages
         text-align: left;
         background: none;
         top: -475px;
-        left: 50%;
+        left: 27%;
         padding: 0px;
         font-size: 2rem;
     }
@@ -81,7 +104,6 @@ styling for single pages
     .about-movie-box{
         margin: auto;
         margin-top: 20px;
-        border-radius: 15px;
         top: -475px;
         width: 450px;
         padding: 45px 35px 25px 85px;

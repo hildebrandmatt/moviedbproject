@@ -38,7 +38,7 @@ const SingleMovie = () => {
                             <p>{movieInfo.release_date}</p>
                         </div>
                         <div class="about-movie-rating">
-                            <p><b>Rating</b></p>
+                            <p aria-label={'rated ' + movieInfo.rating + ' out of 10. '} ><b aria-hidden="true">Rating</b></p>
                             <RatingStars rating={movieInfo.rating} />
                         </div>
                     </div>
