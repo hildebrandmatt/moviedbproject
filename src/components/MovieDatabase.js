@@ -33,7 +33,7 @@ const MovieDatabase = props => {
                         <div class="description">
                             <div class="hover-info">
                                 <p>{movie.description}</p>
-                                <NavLink to={ "/single-movie/" + movie.id } exact><button class="more-info-btn" aria-lable="more info button">More info</button></NavLink>
+                                <NavLink to={ "/single-movie/" + movie.id } exact><button class="more-info-btn" aria-label="more info button">More info</button></NavLink>
                             </div>
                             <div class="quick-intro">
                                 <div class="poster-title">

@@ -39,7 +39,7 @@ const FavouriteMovies = props => {
             <div class="no-favourites">
                 <div class="content-box fave-content-box">
                     <p>Oh no! Looks like you have no favourites. Add movies to your
-                        favourites by clicking the <img src={unfavoriteButton} class="no-favorites-favorite-button" alt="favorite button" aria-lable="heart button"></img> on the movie cards.
+                        favourites by clicking the <img src={unfavoriteButton} class="no-favorites-favorite-button" alt="favorite button" aria-label="heart button"></img> on the movie cards.
                     </p>
                 </div>
             </div> 
