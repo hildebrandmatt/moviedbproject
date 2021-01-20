@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 const PageSelector = props => {
 
     const pages = []
-    console.log(props.pageNumber)
 
     var i = props.pageNumber - 10
     if (i < 1) {

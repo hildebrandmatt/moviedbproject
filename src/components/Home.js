@@ -1,6 +1,7 @@
 import MovieDatabase from '../components/MovieDatabase';
 import { useEffect, useState } from 'react';
 import PageSelector from '../components/PageSelector';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const Home = () => {
 
@@ -11,21 +12,22 @@ const Home = () => {
         if(parseInt(window.location.pathname.substring(6))) {
             setPageNumber(parseInt(window.location.pathname.substring(6)))
         }
-        console.log(pageNumber)
+        setSortorder(localStorage.getItem('sortorder'))
     }, [])
 
     const handleChange = (e) => {
         setSortorder(e.target.value)
+        localStorage.setItem('sortorder', e.target.value)
+        setPageNumber(1)
+        window.history.replaceState(null, "", "/")
     }
 
     const pageChange = () => {
-        console.log(parseInt(window.location.pathname.substring(6)))
         if(parseInt(window.location.pathname.substring(6))) {
             setPageNumber(parseInt(window.location.pathname.substring(6)))
         } else {
             setPageNumber(1)
         }
-        console.log(pageNumber)
     }
 
     return (
@@ -37,7 +39,7 @@ const Home = () => {
                     </div>
                     <form>
                         <label for="selected-category">Display by: &nbsp; </label>
-                        <select name="selected-category" id="selected-category" class="selected-category" onChange={handleChange}>
+                        <select name="selected-category" id="selected-category" class="selected-category" onChange={handleChange} value={sortorder}>
                             <option value="popular">Popular</option>
                             <option value="now_playing">Now Playing</option>
                             <option value="top_rated">Top Rated</option>
