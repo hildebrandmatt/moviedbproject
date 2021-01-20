@@ -5,8 +5,11 @@ import PageSelector from '../components/PageSelector';
 const Home = () => {
 
     const [sortorder, setSortorder] = useState("popular")
+    const [pageNumber, setPageNumber] = useState(1)
 
-    const page = parseInt(window.location.pathname.substring(1))
+    useEffect(() => {
+        console.log(pageNumber)
+    }, [])
 
     const handleChange = (e) => {
         setSortorder(e.target.value)
@@ -30,10 +33,10 @@ const Home = () => {
                     </form>
                 </div>
                 <MovieDatabase  sortOrder={sortorder}
-                                pageNumber={page} />
+                                pageNumber={pageNumber} />
 
             </div>
-            <PageSelector pageNumber={page} />
+            <PageSelector pageNumber={pageNumber} />
         </main>
     )
 }
