@@ -48,7 +48,6 @@ const FavoriteButton = props => {
     
     return (
         <div>
-        {console.log("rerender button")}
             {favorite ? (
                 <img    class="favorite-button"
                         src={favoriteButton}

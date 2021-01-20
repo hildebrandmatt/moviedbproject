@@ -6,7 +6,7 @@ import FavoriteButton from './FavoriteButton';
 import RatingStars from './RatingStars';
 import unfavoriteButton from '../images/unfavouriteButtonRed.png';
 
-const FavouriteMovies = () => {
+const FavouriteMovies = props => {
 
     const [movieArray, setMovieArray] = useState([])
     var tempArray = []
@@ -19,7 +19,7 @@ const FavouriteMovies = () => {
         } else {
             fetchMovie()
         }
-    }, [])
+    }, [props.reset])
 
     const fetchMovie = async (id) => {
         for( let i = 0; i < tempArray.length; i++) {
@@ -47,7 +47,6 @@ const FavouriteMovies = () => {
             :
 
             <div class="favourites-section">
-            { console.log(movieArray) }
                 <div class="movie-gallery">
                     {movieArray.map((movie) => {
                         return (
