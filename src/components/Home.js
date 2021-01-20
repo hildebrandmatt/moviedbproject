@@ -8,11 +8,24 @@ const Home = () => {
     const [pageNumber, setPageNumber] = useState(1)
 
     useEffect(() => {
+        if(parseInt(window.location.pathname.substring(6))) {
+            setPageNumber(parseInt(window.location.pathname.substring(6)))
+        }
         console.log(pageNumber)
     }, [])
 
     const handleChange = (e) => {
         setSortorder(e.target.value)
+    }
+
+    const pageChange = () => {
+        console.log(parseInt(window.location.pathname.substring(6)))
+        if(parseInt(window.location.pathname.substring(6))) {
+            setPageNumber(parseInt(window.location.pathname.substring(6)))
+        } else {
+            setPageNumber(1)
+        }
+        console.log(pageNumber)
     }
 
     return (
@@ -36,7 +49,9 @@ const Home = () => {
                                 pageNumber={pageNumber} />
 
             </div>
-            <PageSelector pageNumber={pageNumber} />
+            <div onClick={pageChange}>
+                <PageSelector pageNumber={pageNumber} />
+            </div>
         </main>
     )
 }
