@@ -1,3 +1,5 @@
+import dbLogo from '../images/tmdblogo.svg';
+
 const About = () => {
     return (
         <main>
@@ -11,6 +13,7 @@ const About = () => {
                 </p>
                 <p>
                 This product uses the TMDb API but is not endorsed or certified by TMDb.
+                <dbLogo />
                 </p>
             </div>
             

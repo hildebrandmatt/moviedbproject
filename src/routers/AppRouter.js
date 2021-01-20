@@ -4,7 +4,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Home from '../components/Home';
 import About from '../components/About';
-import TestPage from '../components/TestPage';
 import SingleMovie from '../components/SingleMovie';
 import Favourites from '../components/Favourites';
 import PageNotFound from '../components/PageNotFound';
