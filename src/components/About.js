@@ -11,9 +11,12 @@ const About = () => {
                     add them to their lists. Don't like a movie anymore? Removing it from your
                     favourites is as easy as pressing the heart button on the posters.
                 </p>
+                <br></br>
                 <p>
                 This product uses the TMDb API but is not endorsed or certified by TMDb.
-                <dbLogo />
+                <br></br>
+                <br></br>
+                <img src={dbLogo} class="dblogo"/>
                 </p>
             </div>
             
