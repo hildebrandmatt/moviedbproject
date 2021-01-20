@@ -1,9 +1,12 @@
 import MovieDatabase from '../components/MovieDatabase';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import PageSelector from '../components/PageSelector';
 
 const Home = () => {
 
     const [sortorder, setSortorder] = useState("popular")
+
+    const page = parseInt(window.location.pathname.substring(1))
 
     const handleChange = (e) => {
         setSortorder(e.target.value)
@@ -26,9 +29,11 @@ const Home = () => {
                         </select>
                     </form>
                 </div>
-                <MovieDatabase sortOrder={sortorder} />
+                <MovieDatabase  sortOrder={sortorder}
+                                pageNumber={page} />
 
             </div>
+            <PageSelector pageNumber={page} />
         </main>
     )
 }

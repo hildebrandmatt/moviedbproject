@@ -15,7 +15,7 @@ const AppRouter = () => (
 		<div className="wrapper">
 			<Header />
 			<Switch>
-				<Route path={'/'} exact><Home /></Route>
+				<Route path={'/'}><Home /></Route>
 				<Route path={'/about'}><About /></Route>
                 <Route path={'/single-movie'}><SingleMovie /></Route>
 				<Route path={'/favourites'}><Favourites /></Route>

@@ -4,6 +4,7 @@ import { processMovieArray } from '../utilities/movieProcessor';
 import { NavLink } from 'react-router-dom';
 import FavoriteButton from '../components/FavoriteButton';
 import RatingStars from '../components/RatingStars';
+import PageSelector from '../components/PageSelector';
 
 const MovieDatabase = props => {
 
