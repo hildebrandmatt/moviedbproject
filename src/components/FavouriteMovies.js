@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import FavoriteButton from './FavoriteButton';
 import RatingStars from './RatingStars';
 import unfavoriteButton from '../images/unfavouriteButtonRed.png';
+import missingPoster from '../images/placeholderPoster.PNG'
 
 const FavouriteMovies = props => {
 
@@ -52,7 +53,7 @@ const FavouriteMovies = props => {
                         return (
                             <div class="movie-info-card">
                                 <div class="poster">
-                                    <img src={ "https://image.tmdb.org/t/p/w500" + movie.poster } />
+                                    <img src={movie.poster ? "https://image.tmdb.org/t/p/w500" + movie.poster : missingPoster } />
                                 </div>
                                 <FavoriteButton movieID={movie.id} />
                                 <div class="description">

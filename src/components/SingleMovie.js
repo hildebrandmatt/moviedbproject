@@ -3,6 +3,7 @@ import { TMDB_API_KEY, TMDB_BASE_URL } from '../globals/variables';
 import { processSingleMovie } from '../utilities/movieProcessor';
 import FavoriteButton from '../components/FavoriteButton';
 import RatingStars from '../components/RatingStars';
+import missingPoster from '../images/placeholderPoster.PNG'
 
 const SingleMovie = () => {
 
@@ -27,7 +28,7 @@ const SingleMovie = () => {
             <div className="single-movie-content">
                 <div className="about-movie-poster-and-title">
                     <div className="about-movie-poster-box">
-                        <img src={ "https://image.tmdb.org/t/p/w500" + movieInfo.poster } class="about-movie-poster"/>
+                    <img src={movieInfo.poster ? "https://image.tmdb.org/t/p/w500" + movieInfo.poster : missingPoster } class="about-movie-poster" />
                     </div>
                 </div>
                 <h3 class="about-movie-title">{movieInfo.title}</h3>

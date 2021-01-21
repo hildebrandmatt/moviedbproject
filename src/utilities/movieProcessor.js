@@ -25,7 +25,7 @@ export const processMovie = (mdAPI, arrayItem) => {
     } else { processedMD.rating = 0 }
     if(mdAPI.results[arrayItem].poster_path) {
         processedMD.poster = mdAPI.results[arrayItem].poster_path
-    } else { processedMD.poster = "/7Ai8vNEv4zEveh12JViGikoVPVV.jpg" }
+    } else { processedMD.poster = null }
     if(mdAPI.results[arrayItem].overview) {
         processedMD.description = mdAPI.results[arrayItem].overview
     } else { processedMD.description = "It's a movie, that much is known." }
@@ -51,7 +51,7 @@ export const processSingleMovie = (mdAPI) => {
     } else { processedMD.rating = 0 }
     if(mdAPI.poster_path) {
         processedMD.poster = mdAPI.poster_path
-    } else { processedMD.poster = "/7Ai8vNEv4zEveh12JViGikoVPVV.jpg" }
+    } else { processedMD.poster = null }
     if(mdAPI.overview) {
         processedMD.description = mdAPI.overview
     } else { processedMD.description = "It's a movie, that much is known." }

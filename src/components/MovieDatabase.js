@@ -4,6 +4,7 @@ import { processMovieArray } from '../utilities/movieProcessor';
 import { NavLink } from 'react-router-dom';
 import FavoriteButton from '../components/FavoriteButton';
 import RatingStars from '../components/RatingStars';
+import missingPoster from '../images/placeholderPoster.PNG'
 
 const MovieDatabase = props => {
 
@@ -33,7 +34,7 @@ const MovieDatabase = props => {
                 return (
                     <div class="movie-info-card">
                         <div class="poster">
-                            <img src={ "https://image.tmdb.org/t/p/w500" + movie.poster } />
+                            <img src={movie.poster ? "https://image.tmdb.org/t/p/w500" + movie.poster : missingPoster } />
                         </div>
                         <FavoriteButton movieID={movie.id} />
                         <div class="description">
