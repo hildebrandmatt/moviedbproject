@@ -33,7 +33,8 @@ const Header = () => {
         <header>
             <NavLink to={'/'} exact><img src={ logo } class="logo-image" /></NavLink>
             <Nav hideNav={hideNav} class="logo-image" />
-            <Search />
+            <div style={{width: "36px"}}></div>
+            {/*<Search />*/}
         </header>
     )
 }

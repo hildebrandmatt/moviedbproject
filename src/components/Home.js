@@ -16,7 +16,6 @@ const Home = () => {
             localStorage.setItem('sortorder', 'popular')
         }
         setSortorder(localStorage.getItem('sortorder'))
-
     }, [])
 
     const handleChange = (e) => {
@@ -55,7 +54,7 @@ const Home = () => {
                                 pageNumber={pageNumber} />
 
             </div>
-            <div onClick={pageChange}>
+            <div onClick={pageChange} id="page-holder">
                 <PageSelector pageNumber={pageNumber} />
             </div>
         </main>
