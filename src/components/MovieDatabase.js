@@ -44,7 +44,8 @@ const MovieDatabase = props => {
                             <div class="quick-intro">
                                 <div class="poster-title">
                                     <p class="poster-intro-title">{movie.title}</p>
-                                    <p class="poster-intro-date" aria-label={'rated ' + movie.rating + ' out of 10. ' + 'Released on '} >{movie.release_date}</p>
+                                    <p class="poster-intro-date">{movie.release_date}</p>
+                                    <p class="sr-only">Rated {movie.rating} out of 10.</p>
                                     <RatingStars rating={movie.rating} />
                                 </div>
                             </div>
