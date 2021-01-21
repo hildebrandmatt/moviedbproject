@@ -12,7 +12,7 @@ const MovieDatabase = props => {
     const fetchMovies = async () => {
         const res = await fetch(`${TMDB_BASE_URL}${props.sortOrder}${TMDB_API_KEY}&language=en-US&page=${props.pageNumber}`)
         let data = await res.json()
-        let processedData = await processMovieArray(data, 12)
+        let processedData = await processMovieArray(data, 20)
         setMovieArray(processedData)
     }
 

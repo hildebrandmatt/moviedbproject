@@ -12,7 +12,11 @@ const Home = () => {
         if(parseInt(window.location.pathname.substring(6))) {
             setPageNumber(parseInt(window.location.pathname.substring(6)))
         }
+        if(!localStorage.getItem('sortorder')) {
+            localStorage.setItem('sortorder', 'popular')
+        }
         setSortorder(localStorage.getItem('sortorder'))
+
     }, [])
 
     const handleChange = (e) => {
