@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import home from '../images/homeButtonRed.png';
 import about from '../images/aboutButtonRed.png';
 import favourite from '../images/favouriteButtonRed.png';
-import search from '../images/searchButtonRed.png';
+//import search from '../images/searchButtonRed.png';
 
 const Nav = ({ hideNav }) => (
 	<nav onClick={hideNav}>
