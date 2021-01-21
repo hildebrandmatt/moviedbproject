@@ -29,8 +29,8 @@ const SingleMovie = () => {
                     <div className="about-movie-poster-box">
                         <img src={ "https://image.tmdb.org/t/p/w500" + movieInfo.poster } class="about-movie-poster"/>
                     </div>
-                    <h3 class="about-movie-title">{movieInfo.title}</h3>
                 </div>
+                <h3 class="about-movie-title">{movieInfo.title}</h3>
                 <div class="about-movie-box">
                     <div class="about-movie-quick-info">
                         <div class="release-date">
