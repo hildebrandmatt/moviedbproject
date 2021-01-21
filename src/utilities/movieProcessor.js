@@ -14,12 +14,24 @@ export const processMovie = (mdAPI, arrayItem) => {
 
     const processedMD = [];
 
-    processedMD.title = mdAPI.results[arrayItem].title
-    processedMD.release_date = formatDate(mdAPI.results[arrayItem].release_date)
-    processedMD.rating = mdAPI.results[arrayItem].vote_average
-    processedMD.poster = mdAPI.results[arrayItem].poster_path
-    processedMD.description = mdAPI.results[arrayItem].overview
-    processedMD.id = mdAPI.results[arrayItem].id
+    if(mdAPI.results[arrayItem].title) {
+        processedMD.title = mdAPI.results[arrayItem].title
+    } else { processedMD.title = "Unknown"}
+    if(mdAPI.results[arrayItem].release_date) {
+        processedMD.release_date = formatDate(mdAPI.results[arrayItem].release_date)
+    } else { processedMD.release_date = "Unknown Release Date" }
+    if(mdAPI.results[arrayItem].vote_average) {
+        processedMD.rating = mdAPI.results[arrayItem].vote_average        
+    } else { processedMD.rating = 0 }
+    if(mdAPI.results[arrayItem].poster_path) {
+        processedMD.poster = mdAPI.results[arrayItem].poster_path
+    } else { processedMD.poster = "/7Ai8vNEv4zEveh12JViGikoVPVV.jpg" }
+    if(mdAPI.results[arrayItem].overview) {
+        processedMD.description = mdAPI.results[arrayItem].overview
+    } else { processedMD.description = "It's a movie, that much is known." }
+    if(mdAPI.results[arrayItem].id) {
+        processedMD.id = mdAPI.results[arrayItem].id
+    } else { processedMD.id = 572154 }
 
     return processedMD
 }
@@ -28,12 +40,24 @@ export const processSingleMovie = (mdAPI) => {
 
     const processedMD = [];
 
-    processedMD.title = mdAPI.title
-    processedMD.release_date = formatDate(mdAPI.release_date)
-    processedMD.rating = mdAPI.vote_average
-    processedMD.poster = mdAPI.poster_path
-    processedMD.description = mdAPI.overview
-    processedMD.id = mdAPI.id
+    if(mdAPI.title) {
+        processedMD.title = mdAPI.title
+    } else { processedMD.title = "Unknown"}
+    if(mdAPI.release_date) {
+        processedMD.release_date = formatDate(mdAPI.release_date)
+    } else { processedMD.release_date = "Unknown Release Date" }
+    if(mdAPI.vote_average) {
+        processedMD.rating = mdAPI.vote_average        
+    } else { processedMD.rating = 0 }
+    if(mdAPI.poster_path) {
+        processedMD.poster = mdAPI.poster_path
+    } else { processedMD.poster = "/7Ai8vNEv4zEveh12JViGikoVPVV.jpg" }
+    if(mdAPI.overview) {
+        processedMD.description = mdAPI.overview
+    } else { processedMD.description = "It's a movie, that much is known." }
+    if(mdAPI.id) {
+        processedMD.id = mdAPI.id
+    } else { processedMD.id = 572154 }
 
     return processedMD
 }
