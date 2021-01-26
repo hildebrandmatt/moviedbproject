@@ -3,7 +3,7 @@ import dbLogo from '../images/tmdblogo.svg';
 const About = () => {
     return (
         <main>
-            <div class="content-box">
+            <div className="content-box">
                 <h1>About</h1>
                 <hr />
                 <div className="about-app-text">
@@ -19,7 +19,7 @@ const About = () => {
                         <img src={dbLogo} class="dblogo"/>
                     </div>
                     <br></br>
-                    <div class='app-team'>
+                    <div className='app-team'>
                         <h3>The Team</h3>
                         <p>
 

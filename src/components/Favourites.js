@@ -19,7 +19,7 @@ const Favourites = () => {
     return (
         <main onClick={refreshPage}>
             <div className="page-title favourites-title">
-                <h1 class="title-red">Favourite&nbsp;</h1> <h1 class="title-white">Movies</h1>
+                <h1 className="title-red">Favourite&nbsp;</h1> <h1 className="title-white">Movies</h1>
             </div>
             <FavoriteMovies reset={pageReset} />
         </main>

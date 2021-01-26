@@ -34,14 +34,14 @@ const Home = () => {
 
     return (
         <main>
-            <div class="home-section">
-                <div class="home-bar">
+            <div className="home-section">
+                <div className="home-bar">
                     <div className="page-title">
-                        <h1 class="title-red">All&nbsp;</h1> <h1 class="title-white">Movies</h1>
+                        <h1 className="title-red">All&nbsp;</h1> <h1 className="title-white">Movies</h1>
                     </div>
                     <form>
-                        <label for="selected-category">Display by: &nbsp; </label>
-                        <select name="selected-category" id="selected-category" class="selected-category" onChange={handleChange} value={sortorder}>
+                        <label htmlFor="selected-category">Display by: &nbsp; </label>
+                        <select name="selected-category" id="selected-category" className="selected-category" onChange={handleChange} value={sortorder}>
                             <option value="popular">Popular</option>
                             <option value="now_playing">Now Playing</option>
                             <option value="top_rated">Top Rated</option>

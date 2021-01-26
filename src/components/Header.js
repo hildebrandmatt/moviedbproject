@@ -31,8 +31,8 @@ const Header = () => {
 
     return (
         <header>
-            <FakeNavLink to={'/'} exact><img src={ logo } class="logo-image" /></FakeNavLink>
-            <Nav hideNav={hideNav} class="logo-image" />
+            <FakeNavLink to={'/'} exact><img src={ logo } className="logo-image" /></FakeNavLink>
+            <Nav hideNav={hideNav} className="logo-image" />
             <div style={{width: "36px"}}></div>
             {/*<Search />*/}
         </header>

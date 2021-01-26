@@ -37,34 +37,34 @@ const FavouriteMovies = props => {
         <div>
             { movieArray &&
                 movieArray.length == 0 ?
-            <div class="no-favourites">
-                <div class="content-box fave-content-box">
+            <div className="no-favourites">
+                <div className="content-box fave-content-box">
                     <p>Oh no! Looks like you have no favourites. Add movies to your
-                        favourites by clicking the <img src={unfavoriteButton} class="no-favorites-favorite-button" alt="favorite button" aria-label="heart button"></img> on the movie cards.
+                        favourites by clicking the <img src={unfavoriteButton} className="no-favorites-favorite-button" alt="favorite button" aria-label="heart button"></img> on the movie cards.
                     </p>
                 </div>
             </div> 
 
             :
 
-            <div class="favourites-section">
-                <div class="movie-gallery">
+            <div className="favourites-section">
+                <div className="movie-gallery">
                     {movieArray.map((movie) => {
                         return (
-                            <div class="movie-info-card">
-                                <div class="poster">
+                            <div className="movie-info-card">
+                                <div className="poster">
                                     <img src={movie.poster ? "https://image.tmdb.org/t/p/w500" + movie.poster : missingPoster } />
                                 </div>
                                 <FavoriteButton movieID={movie.id} />
-                                <div class="description">
-                                    <div class="hover-info">
+                                <div className="description">
+                                    <div className="hover-info">
                                         <p>{movie.description}</p>
-                                        <NavLink to={ "/single-movie/" + movie.id } exact><button class="more-info-btn">More info</button></NavLink>
+                                        <NavLink to={ "/single-movie/" + movie.id } exact><button className="more-info-btn">More info</button></NavLink>
                                     </div>
-                                    <div class="quick-intro">
-                                        <div class="poster-title">
-                                            <p class="poster-intro-title">{movie.title}</p>
-                                            <p class="poster-intro-date">{movie.release_date}</p>
+                                    <div className="quick-intro">
+                                        <div className="poster-title">
+                                            <p className="poster-intro-title">{movie.title}</p>
+                                            <p className="poster-intro-date">{movie.release_date}</p>
                                             <RatingStars rating={movie.rating} />
                                         </div>
                                     </div>

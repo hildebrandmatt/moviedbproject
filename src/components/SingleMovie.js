@@ -31,22 +31,22 @@ const SingleMovie = () => {
                     <img src={movieInfo.poster ? "https://image.tmdb.org/t/p/w500" + movieInfo.poster : missingPoster } class="about-movie-poster" />
                     </div>
                 </div>
-                <h3 class="about-movie-title">{movieInfo.title}</h3>
-                <div class="about-movie-box">
-                    <div class="about-movie-quick-info">
-                        <div class="release-date">
+                <h3 className="about-movie-title">{movieInfo.title}</h3>
+                <div className="about-movie-box">
+                    <div className="about-movie-quick-info">
+                        <div className="release-date">
                             <p><b>Released</b></p>
                             <p>{movieInfo.release_date}</p>
                         </div>
-                        <div class="about-movie-rating">
+                        <div className="about-movie-rating">
                             <p><b>Rating</b></p>
-                            <p class="sr-only">{movieInfo.rating} out of 10.</p>
+                            <p className="sr-only">{movieInfo.rating} out of 10.</p>
                             <RatingStars rating={movieInfo.rating} />
                         </div>
                     </div>
                     <hr />
                     <div className="about-synopsis">
-                        <p class="synopsis-title">Synopsis</p>
+                        <p className="synopsis-title">Synopsis</p>
                         <p>{movieInfo.description}</p>
                     </div>
                     <FavoriteButton movieID={movieInfo.id} />

@@ -3,9 +3,9 @@ import search from '../images/searchButtonRed.png';
 
 const Search = () => {
     return(
-    <div class="search-bar-container">
-        <input type="text" placeholder="Search..." class="search-bar"/>
-        <img src={ search } class="search-icon" />
+    <div className="search-bar-container">
+        <input type="text" placeholder="Search..." className="search-bar"/>
+        <img src={ search } className="search-icon" />
     </div>
     );
 }

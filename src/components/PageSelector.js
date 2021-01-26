@@ -17,22 +17,22 @@ const PageSelector = props => {
 
     for (i; i < max; i++ ) {
         if(i == props.pageNumber){
-            pages.push(<li id="current-page-selector"><NavLink to={'/page/' + i } exact><div class="page-link" id="current-page"><p>{i}</p></div></NavLink></li>)
+            pages.push(<li id="current-page-selector"><NavLink to={'/page/' + i } exact><div className="page-link" id="current-page"><p>{i}</p></div></NavLink></li>)
         } else if ( ( props.pageNumber < 4 && i > 5 ) ||
                     ( props.pageNumber == 4 && i > 7 ) ){
-                        pages.push(<li class="hide-on-mobile"><NavLink to={'/page/' + i } exact><div class="page-link"><p>{i}</p></div></NavLink></li>)
+                        pages.push(<li className="hide-on-mobile"><NavLink to={'/page/' + i } exact><div className="page-link"><p>{i}</p></div></NavLink></li>)
         } else {
-            pages.push(<li><NavLink to={'/page/' + i } exact><div class="page-link"><p>{i}</p></div></NavLink></li>)
+            pages.push(<li><NavLink to={'/page/' + i } exact><div className="page-link"><p>{i}</p></div></NavLink></li>)
         }
     }
 
     return (
-        <nav class="page-selector">
-            <NavLink to={'/page/' + prev } exact><div class="page-link" id="button-previous"><p>Previous</p></div></NavLink>
+        <nav className="page-selector">
+            <NavLink to={'/page/' + prev } exact><div className="page-link" id="button-previous"><p>Previous</p></div></NavLink>
             <ul>
             {pages}
             </ul>
-            <NavLink to={'/page/' + next } exact><div class="page-link" id="button-next"><p>Next</p></div></NavLink>
+            <NavLink to={'/page/' + next } exact><div className="page-link" id="button-next"><p>Next</p></div></NavLink>
         </nav>
     )
 };

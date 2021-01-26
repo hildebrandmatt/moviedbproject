@@ -49,11 +49,11 @@ const FavoriteButton = props => {
     return (
         <div>
             {favorite ? (
-                <img    class="favorite-button"
+                <img    className="favorite-button"
                         src={favoriteButton}
                         onClick={() => addFav({ movieID })} />
             ) : (
-                <img    class="favorite-button"
+                <img    className="favorite-button"
                         src={unfavoriteButton}
                         onClick={() => addFav({ movieID })} />
             )}
