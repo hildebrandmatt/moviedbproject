@@ -101,12 +101,28 @@ hr{
     }
 }
 
-@media (min-width: 87.5){
+@media (min-width: 87.5em){
     
     .content-box{
         margin: 80px 390px 80px 390px;
         padding-left: 150px;
         padding-right: 150px;
+        h1{
+            padding-left: 35px;
+        }
+    }
+
+    .about-app-text{
+        display: flex;
+        margin-bottom: 40px;
+        h3, p, img{
+            margin-left: 50px;
+        }
+    }
+
+    .app-description{
+        width: 45%;
+        text-align: left;
     }
     
     .fave-content-box{
