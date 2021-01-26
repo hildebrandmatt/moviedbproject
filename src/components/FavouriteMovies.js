@@ -51,7 +51,7 @@ const FavouriteMovies = props => {
                 <div className="movie-gallery">
                     {movieArray.map((movie) => {
                         return (
-                            <div className="movie-info-card">
+                            <div className="movie-info-card" key={movie.id}>
                                 <div className="poster">
                                     <img src={movie.poster ? "https://image.tmdb.org/t/p/w500" + movie.poster : missingPoster } alt={"Poster for " +  movie.title} />
                                 </div>
