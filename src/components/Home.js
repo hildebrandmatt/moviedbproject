@@ -1,7 +1,6 @@
 import MovieDatabase from '../components/MovieDatabase';
 import { useEffect, useState } from 'react';
 import PageSelector from '../components/PageSelector';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const Home = () => {
 
