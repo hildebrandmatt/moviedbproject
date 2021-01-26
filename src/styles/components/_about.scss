@@ -1,16 +1,30 @@
 .content-box{
-    margin: 20px 15px 15px 15px;
-    padding: 15px;
+    margin: 20px 15px 40px 15px;
+    padding: 25px;
     background-color: $color-box;
     border-radius: 15px;
     box-shadow: 5px 10px 8px black;
+    text-align: center;
     h1{
         color: $color-font-white;
-        margin: 0;
-        text-align: center;
+        margin: 0 0 10px 0;
     }
-    p{
+    p, h3{
         margin: 15px;
+        text-align: left;
+    }
+    h3{
+        margin-top: 25px;
+    }
+    a{
+        text-decoration: none;
+        color: $color-font-white;
+        &:hover{
+            color: $color-font-red;
+        }
+    }
+    img{
+        margin-top: 5px;
     }
 }
 
@@ -45,7 +59,7 @@ hr{
 @media (min-width: 41.875em){
 
     .content-box{
-        margin: 25px 80px 25px 80px;
+        margin: 25px 80px 40px 80px;
         padding-left: 80px;
         padding-right: 80px;
         h1{
@@ -66,7 +80,7 @@ hr{
     }
 
     .content-box{
-        margin: 25px 120px 25px 120px;
+        margin: 25px 120px 40px 120px;
     }
 }
 
@@ -74,7 +88,7 @@ hr{
 @media (min-width: 63.75em){
 
     .content-box{
-        margin: 80px 100px 25px 100px;
+        margin: 80px 100px 40px 100px;
         padding-left: 100px;
         padding-right: 100px;
     }
@@ -82,50 +96,55 @@ hr{
     .fave-content-box{
         margin-top: 25px;
     }
+    .about-app-text{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .app-description{
+        width: 48%;
+    }
+    
+    .app-team{
+        width: 48%;
+    }
 }
 
 @media (min-width: 75em){
 
-    .content-box{
-        margin: 80px 280px 80px 280px;
+    .fave-content-box{
+        margin: 25px 280px 80px 280px;
         padding-left: 110px;
         padding-right: 110px;
-        h1{
-            text-align: left;
-            padding-left: 20px;
-        }
-    }
-
-    .fave-content-box{
-        margin-top: 25px;
     }
 }
 
-@media (min-width: 87.5em){
-    
+@media (min-width: 97em){
     .content-box{
         margin: 80px 390px 80px 390px;
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 125px;
+        padding-right: 125px;
         h1{
             padding-left: 35px;
         }
     }
 
-    .about-app-text{
-        display: flex;
-        margin-bottom: 40px;
-        h3, p, img{
-            margin-left: 50px;
-        }
-    }
-
-    .app-description{
-        width: 45%;
-        text-align: left;
-    }
-    
     .fave-content-box{
         margin-top: 25px;
     }
+
+    .about-app-text{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .app-description{
+        width: 48%;
+    }
+    
+    .app-team{
+        width: 48%;
+    }
+
 }

@@ -16,14 +16,19 @@ const About = () => {
                         <p>
                             This product uses the TMDb API but is not endorsed or certified by TMDb.
                         </p>
-                        <img src={dbLogo} class="dblogo"/>
+                        <a href="https://www.themoviedb.org/"><img src={dbLogo} class="dblogo" alt="the movie database logo"/></a>
                     </div>
                     <br></br>
                     <div className='app-team'>
                         <h3>The Team</h3>
                         <p>
-
+                            Watcher is a React JS project created by <a href="https://mhildebrand.bcitwebdeveloper.ca">Matt </a>
+                            and <a href="https://skyeyang.bcitwebdeveloper.ca">Skye</a>, who are both currently enrolled in BCIT's 
+                            Technical Web Developer program and studying to become web developers.</p>
+                        <p>
+                            May their shattered spirits recover from this endeavour. 
                         </p>
+                        <br></br>
                     </div>
                 </div>
             </div>
