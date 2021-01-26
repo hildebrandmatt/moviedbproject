@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Nav from './Nav';
-import { NavLink } from 'react-router-dom';
 import logo from '../images/logoRed.png';
 import FakeNavLink from '../components/FakeNavLink';
 
@@ -31,7 +30,7 @@ const Header = () => {
 
     return (
         <header>
-            <FakeNavLink to={'/'} exact><img src={ logo } className="logo-image" /></FakeNavLink>
+            <FakeNavLink to={'/'} exact><img src={ logo } className="logo-image" alt="Watcher W logo" /></FakeNavLink>
             <Nav hideNav={hideNav} className="logo-image" />
             <div style={{width: "36px"}}></div>
             {/*<Search />*/}

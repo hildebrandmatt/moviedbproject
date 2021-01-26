@@ -28,7 +28,7 @@ const SingleMovie = () => {
             <div className="single-movie-content">
                 <div className="about-movie-poster-and-title">
                     <div className="about-movie-poster-box">
-                    <img src={movieInfo.poster ? "https://image.tmdb.org/t/p/w500" + movieInfo.poster : missingPoster } class="about-movie-poster" />
+                    <img src={movieInfo.poster ? "https://image.tmdb.org/t/p/w500" + movieInfo.poster : missingPoster } alt={"Poster for " +  movieInfo.title} className="about-movie-poster" />
                     </div>
                 </div>
                 <h3 className="about-movie-title">{movieInfo.title}</h3>

@@ -36,7 +36,7 @@ const FavouriteMovies = props => {
     return (
         <div>
             { movieArray &&
-                movieArray.length == 0 ?
+                movieArray.length === 0 ?
             <div className="no-favourites">
                 <div className="content-box fave-content-box">
                     <p>Oh no! Looks like you have no favourites. Add movies to your
@@ -53,7 +53,7 @@ const FavouriteMovies = props => {
                         return (
                             <div className="movie-info-card">
                                 <div className="poster">
-                                    <img src={movie.poster ? "https://image.tmdb.org/t/p/w500" + movie.poster : missingPoster } />
+                                    <img src={movie.poster ? "https://image.tmdb.org/t/p/w500" + movie.poster : missingPoster } alt={"Poster for " +  movie.title} />
                                 </div>
                                 <FavoriteButton movieID={movie.id} />
                                 <div className="description">
