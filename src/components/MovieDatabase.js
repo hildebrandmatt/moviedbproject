@@ -18,9 +18,6 @@ const MovieDatabase = props => {
     }
 
     useEffect(() => {
-        var pageSet = props.pageNumber % 5
-        var pageOne = Math.floor(props.pageNumber * 2/3)
-        var pageTwo = pageOne + 1
         fetchMovies()
     }, [props.sortOrder, props.pageNumber])
 
@@ -29,9 +26,9 @@ const MovieDatabase = props => {
             { movieArray &&
             movieArray.map((movie) => {
                 return (
-                    <div className="movie-info-card">
+                    <div className="movie-info-card" key={movie.id}>
                         <div className="poster">
-                            <img src={movie.poster ? "https://image.tmdb.org/t/p/w500" + movie.poster : missingPoster } />
+                            <img src={movie.poster ? "https://image.tmdb.org/t/p/w500" + movie.poster : missingPoster } alt={"Poster for " +  movie.title} />
                         </div>
                         <FavoriteButton movieID={movie.id} />
                         <div className="description">

@@ -16,13 +16,13 @@ const PageSelector = props => {
     const next = props.pageNumber + 1
 
     for (i; i < max; i++ ) {
-        if(i == props.pageNumber){
-            pages.push(<li id="current-page-selector"><NavLink to={'/page/' + i } exact><div className="page-link" id="current-page"><p>{i}</p></div></NavLink></li>)
+        if(i === props.pageNumber){
+            pages.push(<li id="current-page-selector" key={i}><NavLink to={'/page/' + i } exact><div className="page-link" id="current-page"><p>{i}</p></div></NavLink></li>)
         } else if ( ( props.pageNumber < 4 && i > 5 ) ||
-                    ( props.pageNumber == 4 && i > 7 ) ){
-                        pages.push(<li className="hide-on-mobile"><NavLink to={'/page/' + i } exact><div className="page-link"><p>{i}</p></div></NavLink></li>)
+                    ( props.pageNumber === 4 && i > 7 ) ){
+                        pages.push(<li className="hide-on-mobile" key={i}><NavLink to={'/page/' + i } exact><div className="page-link"><p>{i}</p></div></NavLink></li>)
         } else {
-            pages.push(<li><NavLink to={'/page/' + i } exact><div className="page-link"><p>{i}</p></div></NavLink></li>)
+            pages.push(<li key={i}><NavLink to={'/page/' + i } exact><div className="page-link"><p>{i}</p></div></NavLink></li>)
         }
     }
 

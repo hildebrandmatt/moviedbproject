@@ -16,7 +16,7 @@ const About = () => {
                         <p>
                             This product uses the TMDb API but is not endorsed or certified by TMDb.
                         </p>
-                        <img src={dbLogo} class="dblogo"/>
+                        <img src={dbLogo} className="dblogo" alt="TMDB Logo"/>
                     </div>
                     <br></br>
                     <div className='app-team'>

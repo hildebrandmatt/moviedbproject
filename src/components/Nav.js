@@ -7,9 +7,9 @@ import FakeNavLink from '../components/FakeNavLink';
 const Nav = ({ hideNav }) => (
 	<nav onClick={hideNav}>
         <ul>
-            <li><FakeNavLink to={'/'} exact><img src={ home } /><p>Home</p></FakeNavLink></li>
-            <li><NavLink to={'/about'}><img src={ about } /><p>About</p></NavLink></li>
-            <li><NavLink to={'/favourites'}><img src={ favourite } /><p>Favourites</p></NavLink></li>
+            <li><FakeNavLink to={'/'} exact><img src={ home } alt="Home button" /><p>Home</p></FakeNavLink></li>
+            <li><NavLink to={'/about'}><img src={ about } alt="About button" /><p>About</p></NavLink></li>
+            <li><NavLink to={'/favourites'}><img src={ favourite } alt="Favorites button" /><p>Favourites</p></NavLink></li>
         </ul>
 	</nav>    
 );
