@@ -84,50 +84,6 @@ styling for single pages
 
 @media (min-width: 56.25em){
     .single-movie-content{
-        width: 800px;
-        margin: auto;
-        margin-top: 80px;
-        display: grid;
-        grid-template-rows: repeat(16, 50px);
-        grid-template-columns: repeat(15, 1fr);
-    }
-
-    .about-movie-poster{
-        max-width: 100%;
-    }
-
-    .about-movie-poster-and-title{
-        grid-row-start: 1;
-        grid-row-end: 7;
-        grid-column-start: 2;
-        grid-column-end: 8;
-    }
-
-    .about-movie-box{
-        width: 100%;
-        margin-left: 1em;
-        padding: 35px 35px 35px 75px;
-        grid-row-start: 6;
-        grid-column-start: 7;
-        grid-column-end: 15;
-    }
-
-    .about-movie-title{
-        font-size: 2em;
-        text-align: left;
-        background: none;
-        padding: 0;
-        margin-top: 1.25em;
-        margin-left: 1em;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 8;
-        grid-column-end: 16;
-        max-width: 100%;
-    }
-
-    /*
-    .single-movie-content{
         margin: auto;
     }
 
@@ -141,10 +97,10 @@ styling for single pages
         text-align: left;
         background: none;
         top: -475px;
-        left: 22%;
+        left: 6em;
         padding: 0px;
         font-size: 2rem;
-        max-width: 45%;
+        max-width: 400px;
     }
 
     .about-movie-box{
@@ -155,5 +111,4 @@ styling for single pages
         padding: 45px 35px 25px 85px;
         left: 140px;
     }
-    */
 }

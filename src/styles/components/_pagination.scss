@@ -4,6 +4,7 @@ nav.page-selector {
     margin: auto;
     width: 21em;
     margin-top: 40px;
+    box-shadow: 5px 5px 10px #0E0C0D;
 
     ul {
         display: flex;
@@ -28,7 +29,6 @@ nav.page-selector {
     .page-link {
         width: 3em;
         height: 2em;
-        border: solid 0.5px $color-font-red;
         background-color: $color-box;
         justify-content: center;
         justify-items: center;

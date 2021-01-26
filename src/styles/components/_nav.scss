@@ -66,3 +66,26 @@ input{
     }
 
 }
+@media (min-width: 90em){
+
+    .logo-image{
+        order: 1;
+        margin-left: 11em;
+    }
+
+    nav{
+        margin-right: 11em;
+    }
+}
+
+@media (min-width: 105em){
+
+    .logo-image{
+        order: 1;
+        margin-left: 17em;
+    }
+
+    nav{
+        margin-right: 17em;
+    }
+}

@@ -5,6 +5,31 @@ header{
     justify-content: space-between;
     background-color: $color-box;
     padding: 12px;
+    p{
+        color: $color-font-white;
+        margin: 0;
+    }
+}
+
+form{
+    display: inline-block;
+}
+
+label{
+    font-size: 0.9rem;
+}
+
+select, option{
+    background-color: $color-box;
+    color: $color-font-white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $font-header;
+    font-weight: lighter;
 }
 
 ul{
