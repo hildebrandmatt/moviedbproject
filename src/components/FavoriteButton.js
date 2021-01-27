@@ -5,10 +5,9 @@ import { useEffect, useState } from 'react';
 const FavoriteButton = props => {
 
     const [ favorite, setFavorite ] = useState(false)
-    var tempArray = []
 
     useEffect(() => {
-        tempArray = JSON.parse(localStorage.getItem('favorites'))
+        let tempArray = JSON.parse(localStorage.getItem('favorites'))
         if ( !tempArray ) {
             tempArray = []
         }
@@ -19,10 +18,10 @@ const FavoriteButton = props => {
                 setFavorite(true)
             }
         }
-    }, [tempArray, props.movieID])
+    }, [props.movieID])
 
     const addFav = props => {
-        tempArray = JSON.parse(localStorage.getItem('favorites'))
+        let tempArray = JSON.parse(localStorage.getItem('favorites'))
         if ( !tempArray ) {
             tempArray = []
         }

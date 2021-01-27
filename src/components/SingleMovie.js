@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { TMDB_API_KEY, TMDB_BASE_URL } from '../globals/variables';
 import { processSingleMovie } from '../utilities/movieProcessor';
 import FavoriteButton from '../components/FavoriteButton';
@@ -7,20 +8,23 @@ import missingPoster from '../images/placeholderPoster.PNG'
 
 const SingleMovie = () => {
 
-    const id = window.location.pathname.substring(14)
+    //const id = window.location.pathname.substring(14)
     
+    const { id } = useParams();
+
     const [movieInfo, setMovieInfo] = useState(null)
 
-    const fetchMovie = async () => {
-        const res = await fetch(`${TMDB_BASE_URL}${id}${TMDB_API_KEY}&language=en-US`)
-        let data = await res.json()
-        let processedData = await processSingleMovie(data)
-        setMovieInfo(processedData)
-    }
+    
 
     useEffect(() => {
+        const fetchMovie = async () => {
+            const res = await fetch(`${TMDB_BASE_URL}${id}${TMDB_API_KEY}&language=en-US`)
+            let data = await res.json()
+            let processedData = await processSingleMovie(data)
+            setMovieInfo(processedData)
+        }
         fetchMovie()
-    }, [])
+    }, [id])
 
     return (
         <main>

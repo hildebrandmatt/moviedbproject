@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
+//import { useState, useEffect } from 'react';
 import Nav from './Nav';
 import logo from '../images/logoRed.png';
 import FakeNavLink from '../components/FakeNavLink';
 
 const Header = () => {
 
-	const [navOpen, setNavOpen] = useState(false);
+	/*const [navOpen, setNavOpen] = useState(false);
 
     const showHideNav = () => {
         setNavOpen(!navOpen);
@@ -26,12 +26,12 @@ const Header = () => {
           mediaQuery.addListener(isDesktop);
           // this is the cleanup function to remove the listener
           return () => mediaQuery.removeListener(isDesktop);
-    }, []);
+    }, []);*/
 
     return (
         <header>
             <FakeNavLink to={'/'} exact><img src={ logo } className="logo-image" alt="Watcher W logo" /></FakeNavLink>
-            <Nav hideNav={hideNav} className="logo-image" />
+            <Nav className="logo-image" />
             <div style={{width: "36px"}}></div>
             {/*<Search />*/}
         </header>

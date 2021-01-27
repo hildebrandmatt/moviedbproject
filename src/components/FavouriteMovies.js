@@ -9,34 +9,32 @@ import missingPoster from '../images/placeholderPoster.PNG'
 
 const FavouriteMovies = props => {
 
-    const [movieArray, setMovieArray] = useState([])
-    var tempArray = []
-    var favArray = []
+   //const [movieIDs, setMovieIDs] = useState(null);
+    const [favMovies, setFavMovies] = useState(null);
+   // var favArray = [];
 
-    useEffect(() => {
-        tempArray = JSON.parse(localStorage.getItem('favorites'))
-        if ( !tempArray ) {
-            tempArray = []
-        } else {
-            fetchMovie()
-        }
-    }, [props.reset])
-
-    const fetchMovie = async (id) => {
-        for( let i = 0; i < tempArray.length; i++) {
-            const res = await fetch(`${TMDB_BASE_URL}${tempArray[i]}${TMDB_API_KEY}&language=en-US`)
+    const fetchMovie = async (arr) => {
+        const favArray = [];
+        for( let i = 0; i < arr.length; i++) {
+            const res = await fetch(`${TMDB_BASE_URL}${arr[i]}${TMDB_API_KEY}&language=en-US`)
             let data = await res.json()
             let processedData = await processSingleMovie(data)
             favArray.push(processedData)
         }
-        setMovieArray(favArray)
+        setFavMovies(favArray);
     }
 
+    useEffect(() => {
+        let tempArray = JSON.parse(localStorage.getItem('favorites'))
+        if ( tempArray && Array.isArray(tempArray) && tempArray.length > 0 ) {
+           // setMovieIDs(tempArray)
+            fetchMovie(tempArray)
+        }
+    }, [props.reset])
 
     return (
         <div>
-            { movieArray &&
-                movieArray.length === 0 ?
+            { !favMovies ?
             <div className="no-favourites">
                 <div className="content-box fave-content-box">
                     <p>Oh no! Looks like you have no favourites. Add movies to your
@@ -49,7 +47,7 @@ const FavouriteMovies = props => {
 
             <div className="favourites-section">
                 <div className="movie-gallery">
-                    {movieArray.map((movie) => {
+                    {favMovies.map((movie) => {
                         return (
                             <div className="movie-info-card" key={movie.id}>
                                 <div className="poster">
