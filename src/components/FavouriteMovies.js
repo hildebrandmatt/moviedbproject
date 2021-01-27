@@ -9,9 +9,7 @@ import missingPoster from '../images/placeholderPoster.PNG'
 
 const FavouriteMovies = props => {
 
-   //const [movieIDs, setMovieIDs] = useState(null);
     const [favMovies, setFavMovies] = useState(null);
-   // var favArray = [];
 
     const fetchMovie = async (arr) => {
         const favArray = [];
@@ -27,9 +25,11 @@ const FavouriteMovies = props => {
     useEffect(() => {
         let tempArray = JSON.parse(localStorage.getItem('favorites'))
         if ( tempArray && Array.isArray(tempArray) && tempArray.length > 0 ) {
-           // setMovieIDs(tempArray)
             fetchMovie(tempArray)
+        } else {
+            setFavMovies(null)
         }
+        console.log("refresh")
     }, [props.reset])
 
     return (
