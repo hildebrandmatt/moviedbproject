@@ -24,7 +24,8 @@ const About = () => {
                         <p>
                             Watcher is a React JS project created by <a href="https://mhildebrand.bcitwebdeveloper.ca">Matt </a>
                             and <a href="https://skyeyang.bcitwebdeveloper.ca">Skye</a>, who are both currently enrolled in BCIT's 
-                            Technical Web Developer program and studying to become web developers.</p>
+                            Technical Web Developer program and studying to become web developers. Though many coffee-driven nights
+                            were spent and many curses uttered, their collaborative effort resulted in an app they're proud of.</p>
                         <p>
                             May their shattered spirits recover from this endeavour. 
                         </p>
