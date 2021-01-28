@@ -7,10 +7,11 @@ import About from '../components/About';
 import SingleMovie from '../components/SingleMovie';
 import Favourites from '../components/Favourites';
 import PageNotFound from '../components/PageNotFound';
+import { APP_FOLDER_NAME } from '../globals/variables';
 
 const AppRouter = () => (
 
-	<Router>
+	<Router basename={ APP_FOLDER_NAME } >
 		<div className="wrapper">
 			<Header />
 			<Switch>

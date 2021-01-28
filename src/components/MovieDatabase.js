@@ -10,8 +10,6 @@ const MovieDatabase = props => {
 
     const [movieArray, setMovieArray] = useState(null)
 
-    
-
     useEffect(() => {
         const fetchMovies = async () => {
             const res = await fetch(`${TMDB_BASE_URL}${props.sortOrder}${TMDB_API_KEY}&language=en-US&page=${props.pageNumber}`)

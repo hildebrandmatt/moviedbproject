@@ -30,7 +30,7 @@ const Header = () => {
 
     return (
         <header>
-            <FakeNavLink to={'/'} exact><img src={ logo } className="logo-image" alt="Watcher W logo" /></FakeNavLink>
+            <FakeNavLink to={'/watcher/'} exact><img src={ logo } className="logo-image" alt="Watcher W logo" /></FakeNavLink>
             <Nav className="logo-image" />
             <div style={{width: "36px"}}></div>
             {/*<Search />*/}
