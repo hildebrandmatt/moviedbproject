@@ -6,7 +6,7 @@ const Home = () => {
     
 
     const [sortorder, setSortorder] = useState("popular")
-    const [pageNumber, setPageNumber] = useState(9)
+    const [pageNumber, setPageNumber] = useState(1)
 
     useEffect(() => {
         if(parseInt(window.location.pathname.substring(14))) {
@@ -21,7 +21,7 @@ const Home = () => {
     const handleChange = (e) => {
         setSortorder(e.target.value)
         localStorage.setItem('sortorder', e.target.value)
-        setPageNumber(9)
+        setPageNumber(1)
         window.history.replaceState(null, "", "/")
     }
 
@@ -29,7 +29,7 @@ const Home = () => {
         if(parseInt(window.location.pathname.substring(14))) {
             setPageNumber(parseInt(window.location.pathname.substring(14)))
         } else {
-            setPageNumber(9)
+            setPageNumber(1)
         }
         console.log(window.location.pathname.substring(14))
     }
