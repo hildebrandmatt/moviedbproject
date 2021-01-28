@@ -37,7 +37,8 @@ const MovieDatabase = props => {
                             </div>
                             <div className="quick-intro">
                                 <div className="poster-title">
-                                    <p className="poster-intro-title">{movie.title}</p>
+                                    
+                                    <NavLink to={ "/single-movie/" + movie.id } exact><p className="poster-intro-title">{movie.title}</p></NavLink>
                                     <p className="poster-intro-date">{movie.release_date}</p>
                                     <p className="sr-only">Rated {movie.rating} out of 10.</p>
                                     <RatingStars rating={movie.rating} />

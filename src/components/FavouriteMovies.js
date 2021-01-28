@@ -61,7 +61,7 @@ const FavouriteMovies = props => {
                                     </div>
                                     <div className="quick-intro">
                                         <div className="poster-title">
-                                            <p className="poster-intro-title">{movie.title}</p>
+                                            <NavLink to={ "/single-movie/" + movie.id } exact><p className="poster-intro-title">{movie.title}</p></NavLink>
                                             <p className="poster-intro-date">{movie.release_date}</p>
                                             <RatingStars rating={movie.rating} />
                                         </div>
