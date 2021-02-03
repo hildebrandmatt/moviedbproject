@@ -10,11 +10,12 @@ window.onload = function(){
 
 
     function showSearch() {
-      document.getElementById("search-bar").classList.toggle("show");
-      document.getElementById("li-id1").style.display = "none";
-      document.getElementById("li-id2").style.display = "none";
-      document.getElementById("li-id3").style.display = "none";
-      document.getElementById("home-logo").style.display = "none"
+        document.getElementById("search-bar").classList.toggle("show");
+        document.getElementById("li-id1").classList.toggle("hide");
+        document.getElementById("li-id2").classList.toggle("hide");
+        document.getElementById("li-id3").classList.toggle("hide");
+        document.getElementById("home-logo").classList.toggle("hide");
+      
     }
 }
 
