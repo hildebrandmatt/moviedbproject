@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import search from '../images/searchButtonRed.png';
 
 
@@ -21,9 +21,25 @@ window.onload = function(){
 
 
 const Search = () => {
+
+    const history = useHistory();
+    
+    function liveSearch(e){
+        let q = e.target.value
+
+        q = q.trim();
+    
+        if(q === ''){
+          history.push(`/`);
+          return;
+        }
+    
+        history.push(`/search?query=${q}`);
+    }
+
     return(
     <div id="search-bar-container">
-        <input type="text" placeholder="Search..." id="search-bar"/>
+    <input type="search" placeholder="Search..." id="search-bar" onChange={liveSearch} />
         <img src={ search } id="search-icon" />
     </div>
     );
