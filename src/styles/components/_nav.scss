@@ -47,7 +47,7 @@ input{
 
     input{
         display: block;
-        padding-top: 7px;
+        padding-top: 8px;
     }
     
     nav{
@@ -66,7 +66,20 @@ input{
     }
 
 }
+
+@media (min-width: 70em){
+    input{
+        margin-left: 25em;
+        width: 250px;
+    }
+}
+
 @media (min-width: 90em){
+
+    input{
+        margin-left: 35em;
+        width: 250px;
+    }
 
     .logo-image{
         order: 1;

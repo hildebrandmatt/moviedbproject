@@ -11,7 +11,6 @@ const Header = () => {
             <FakeNavLink to={'/watcher/page/1'} exact><img src={ logo } className="logo-image" alt="Watcher W logo" /></FakeNavLink>
             <Nav className="logo-image" />
             <Search />
-            <div style={{width: "36px"}}></div>
         </header>
     )
 }
