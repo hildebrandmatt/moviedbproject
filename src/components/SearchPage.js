@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 import { TMDB_SEARCH_URL } from '../globals/variables';
 import { processMovieArray } from '../utilities/movieProcessor';
 import { NavLink } from 'react-router-dom';
