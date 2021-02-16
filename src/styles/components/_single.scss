@@ -41,6 +41,10 @@ styling for single pages
             left: 0px;
         }
     }
+    button:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }
 .about-movie-rating p{
     text-align: right;
