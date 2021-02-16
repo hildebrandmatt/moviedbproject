@@ -35,7 +35,11 @@ styling for single pages
         position: relative;
         background: none;
         border: none;
-        left: 134px;
+        right: -45%;
+        .favorite-button{
+            position: relative;
+            left: 0px;
+        }
     }
 }
 .about-movie-rating p{
