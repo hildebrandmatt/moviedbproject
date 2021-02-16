@@ -31,6 +31,12 @@ styling for single pages
     padding: 80px 25px 25px 25px;
     background-color: #0d0d0d;
     box-shadow: 5px 10px 8px black;
+    button {
+        position: relative;
+        background: none;
+        border: none;
+        left: 134px;
+    }
 }
 .about-movie-rating p{
     text-align: right;
