@@ -47,17 +47,17 @@ const FavoriteButton = props => {
     
     return (
         <div>
-            <button className="poster-fave-button">
+            <button className="poster-fave-button"
+                    onClick={() => addFav({ movieID })}
+                    onMouseDown={ (e) => { e.preventDefault(); }}>
                 {favorite ? (
                     <img    className="favorite-button"
                             src={favoriteButton}
-                            alt="Favorited movie icon"
-                            onClick={() => addFav({ movieID })} />
+                            alt="Favorited movie icon" />
                 ) : (
                     <img    className="favorite-button"
                             src={unfavoriteButton}
-                            alt="Not favorited movie icon"
-                            onClick={() => addFav({ movieID })} />
+                            alt="Not favorited movie icon" />
                 )}
             </button>
         </div>
