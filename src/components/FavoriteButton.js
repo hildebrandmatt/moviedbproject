@@ -47,7 +47,7 @@ const FavoriteButton = props => {
     
     return (
         <div>
-            <button >
+            <button className="poster-fave-button">
                 {favorite ? (
                     <img    className="favorite-button"
                             src={favoriteButton}

@@ -62,7 +62,13 @@ a{
 }
 
 
+
+
 @media (min-width: 41.875em) {
+
+    #search-icon{
+        display: none;
+    }
 
     a:hover{
         color: $color-font-red;

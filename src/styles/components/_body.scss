@@ -93,9 +93,12 @@ p{
 }
 
 .poster-fave-button{
+    border: none;
+    background: none;
     position: absolute;
-    right: 20px;
-    top: 15px;
+    width: 45px;
+    right: 8px;
+    top: 8px;
     cursor: pointer;
     z-index: 5;    
 }
@@ -171,14 +174,14 @@ label{
     border: 0;
   }
 
-.movie-info-card .favorite-button{
-    z-index: 100;
-    position: relative;
-    width: 32px;
-    left: 192px;
-    top: 8px;
-    cursor: pointer;
-}
+// .movie-info-card .favorite-button{
+//     z-index: 100;
+//     position: relative;
+//     width: 32px;
+//     left: 192px;
+//     top: 8px;
+//     cursor: pointer;
+// }
 
 @media (min-width: 28.75em){
     .movie-info-card{
