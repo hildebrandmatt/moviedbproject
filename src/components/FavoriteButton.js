@@ -47,17 +47,19 @@ const FavoriteButton = props => {
     
     return (
         <div>
-            {favorite ? (
-                <img    className="favorite-button"
-                        src={favoriteButton}
-                        alt="Favorited movie icon"
-                        onClick={() => addFav({ movieID })} />
-            ) : (
-                <img    className="favorite-button"
-                        src={unfavoriteButton}
-                        alt="Not favorited movie icon"
-                        onClick={() => addFav({ movieID })} />
-            )}
+            <button >
+                {favorite ? (
+                    <img    className="favorite-button"
+                            src={favoriteButton}
+                            alt="Favorited movie icon"
+                            onClick={() => addFav({ movieID })} />
+                ) : (
+                    <img    className="favorite-button"
+                            src={unfavoriteButton}
+                            alt="Not favorited movie icon"
+                            onClick={() => addFav({ movieID })} />
+                )}
+            </button>
         </div>
     )
 }
