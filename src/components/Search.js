@@ -11,6 +11,7 @@ window.onload = function(){
 
     function showSearch() {
         document.getElementById("search-bar").classList.toggle("show");
+        document.getElementById("search-bar-container").classList.toggle("show-bar");
         document.getElementById("li-id1").classList.toggle("hide");
         document.getElementById("li-id2").classList.toggle("hide");
         document.getElementById("li-id3").classList.toggle("hide");
