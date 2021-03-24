@@ -10,7 +10,7 @@ nav.page-selector {
         display: flex;
         padding: 0px;
         margin: auto;
-        width: 9em;
+        width: 2.5em;
         overflow: hidden;
         justify-content: center;
         li:not(#current-page-selector){
@@ -25,6 +25,12 @@ nav.page-selector {
     }
     li {
         padding: 0;
+    }
+    li:hover {
+        cursor: pointer;
+    }
+    .page-link:hover {
+        cursor: pointer;
     }
     .page-link {
         width: 2.5em;
@@ -83,7 +89,7 @@ nav.page-selector {
     nav.page-selector {
         width: 34.5em;
         ul {
-            width: 26em;
+            width: 22.5em;
             li.hide-on-mobile:not(#current-page-selector) {
                 display: block;
             }
