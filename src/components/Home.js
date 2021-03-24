@@ -1,6 +1,6 @@
 import MovieDatabase from '../components/MovieDatabase';
 import { useEffect, useState } from 'react';
-import PageSelector from '../components/PageSelector';
+//import PageSelector from '../components/PageSelector';
 
 const Home = () => {
     
@@ -9,14 +9,11 @@ const Home = () => {
     const [pageNumber, setPageNumber] = useState(1)
 
     useEffect(() => {
-        if(parseInt(window.location.pathname.substring(14))) {
-            setPageNumber(parseInt(window.location.pathname.substring(14)))
-        }
         if(!localStorage.getItem('sortorder')) {
             localStorage.setItem('sortorder', 'popular')
         }
         setSortorder(localStorage.getItem('sortorder'))
-    }, [])
+    }, [pageNumber])
 
     const handleChange = (e) => {
         setSortorder(e.target.value)
@@ -25,13 +22,47 @@ const Home = () => {
         window.history.replaceState(null, "", "/")
     }
 
-    const pageChange = () => {
-        if(parseInt(window.location.pathname.substring(14))) {
-            setPageNumber(parseInt(window.location.pathname.substring(14)))
-        } else {
-            setPageNumber(1)
+    const PageSelector = () => {
+    
+        const pages = []
+    
+        var i = pageNumber - 4
+        if (i < 1) {
+            i = 1
         }
-        console.log(window.location.pathname.substring(14))
+        var max = i + 9
+        var prev = pageNumber - 1
+        if (prev < 1) {
+            prev = 1
+        }
+        const next = pageNumber + 1
+    
+        for (i; i < max; i++ ) {
+            let y = i
+            if(i === pageNumber){
+                pages.push(<li id="current-page-selector" key={i}><div className="page-link" id="current-page" onClick={() => pageChange(y)}><p>{i}</p></div></li>)
+
+            } else if ( ( pageNumber < 4 && i > 5 ) ||
+                        ( pageNumber === 4 && i > 7 ) ){
+                            pages.push(<li className="hide-on-mobile" key={i}><div className="page-link" onClick={() => pageChange(y)}><p>{i}</p></div></li>)
+            } else {
+                pages.push(<li key={i}><div className="page-link" onClick={() => pageChange(y)}><p>{i}</p></div></li>)
+            }
+        }
+    
+        return (
+            <nav className="page-selector">
+                <div className="page-link" id="button-previous" onClick={() => pageChange(prev)}><p>Previous</p></div>
+                <ul>
+                {pages}
+                </ul>
+                <div className="page-link" id="button-next" onClick={() => pageChange(next)}><p>Next</p></div>
+            </nav>
+        )
+    };
+
+    const pageChange = (page) => {
+        setPageNumber(page)
     }
 
     return (
@@ -55,9 +86,7 @@ const Home = () => {
                                 pageNumber={pageNumber} />
 
             </div>
-            <div onClick={pageChange} id="page-holder">
-                <PageSelector pageNumber={pageNumber} />
-            </div>
+            <PageSelector />
         </main>
     )
 }
